@@ -13,7 +13,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "cross-env CI=true react-scripts test --coverage",
     "test:coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject"
   },
@@ -40,5 +40,14 @@
       "!**/serviceWorker.js",
       "!**/index.js"
     ]
+  },
+  "devDependencies": {
+    "husky": "^4.2.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm test",
+      "pre-push": "npm run lint && npm test"
+    }
   }
 }
