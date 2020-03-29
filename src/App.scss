@@ -1,5 +1,12 @@
+@import './scss/index.scss';
+
 .App {
   text-align: center;
+  
+}
+
+p{
+  color: $red;
 }
 
 .App-logo {
