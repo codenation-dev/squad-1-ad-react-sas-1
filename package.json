@@ -43,7 +43,12 @@
       "!**/coverage/**",
       "!**/serviceWorker.js",
       "!**/index.js"
-    ]
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 50
+      }
+    }
   },
   "devDependencies": {
     "husky": "^4.2.3"
