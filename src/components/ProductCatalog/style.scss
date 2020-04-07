@@ -1,0 +1,49 @@
+.product-catalog  {
+    
+    &__image-wrapper {
+        position: relative;
+        
+        img {
+            width: 100%;
+        }
+        
+    }
+
+    &__description {
+        text-align: center;
+    }
+
+    &__product-name {
+        font-weight: bold;
+    }
+
+    &__product-price {
+        margin: 0 5px 0 5px;
+
+        .has-discount &{
+            &.is-regular {
+                text-decoration: line-through;
+                color: #c6c6c6;
+            }
+
+            &.is-discount {
+                display: inline;
+            }
+        }
+        &.is-discount {
+            display: none;
+        }
+
+    }
+
+    &__badge {
+        background-color: #000;
+        color: #fff;
+        font-size: 12px;
+        padding: 2px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+}
