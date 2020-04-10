@@ -7,7 +7,7 @@ import DressImage from '../../assets/img/product.jpg';
 
 function Product () {
   return (
-    <>
+    <div>
       <div className="container-product">
         <div className="product-image">
           <img src={DressImage} alt="white-dress"/>
@@ -26,7 +26,7 @@ function Product () {
           <button className="button_buy" type="button">Adicionar à Sacola</button>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
