@@ -1,5 +1,6 @@
 import React from "react";
 import Badge from "../Badge";
+import ProductInfo from './../ProductInfo'
 import "./style.scss";
 
 class ProductCatalog extends React.Component {
@@ -19,17 +20,8 @@ class ProductCatalog extends React.Component {
           <Badge percentage={percentage} />
           <img src={img} />
         </div>
-        <div className="product-catalog__description">
-          <div className="product-catalog__product-name">{name}</div>
-          <div className="product-catalog__product-prices">
-            <span className="product-catalog__product-price is-regular">
-              {price}
-            </span>
-            <span className="product-catalog__product-price is-discount">
-              {priceDiscount}
-            </span>
-          </div>
-        </div>
+        
+        <ProductInfo center product={{ name, price, priceDiscount }}/>
       </div>
     );
   }
