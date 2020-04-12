@@ -52,7 +52,6 @@ const ShoppingCart = props => {
                                 
                             </div>                
                         </li>
-
                     </ul>
                     <div className= "minicart__content-empty">
                         <span>
