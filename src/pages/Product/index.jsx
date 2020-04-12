@@ -3,11 +3,11 @@ import React from 'react';
 import './style.scss';
 import DressImage from '../../assets/img/product.jpg';
 
-// import Container from '../../components/Container/Container';
+import Container from '../../components/Container/Container';
 
 function Product () {
   return (
-    <div>
+    <Container>
       <div className="container-product">
         <div className="product-image">
           <img src={DressImage} alt="white-dress"/>
@@ -26,7 +26,7 @@ function Product () {
           <button className="button_buy" type="button">Adicionar à Sacola</button>
         </div>
       </div>
-    </div>
+    </Container>
   )
 }
 

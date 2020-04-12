@@ -1,13 +1,16 @@
 import React from 'react';
-import Header from "./components/Header/Header";
+
+import Header from './components/Header'
+import Router from './routes'
 import './App.scss';
-import Home from './pages/Home';
+
 
 function App() {
   return (
     <React.Fragment>
-      <Header/>
-      <Home />
+      <Router>
+        <Header/>
+      </Router>
     </React.Fragment>
   );
 }
