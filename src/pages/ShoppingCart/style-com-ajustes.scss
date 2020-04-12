@@ -2,8 +2,9 @@
 
 .minicart__overlay{
     background: rgba(96, 96, 96, 0.4);
-    height: 100vh;
+    height: calc(100vh - 84px);
     width: 100vw;
+    max-width: 100%;
     display: flex;
     justify-content: flex-end;
     z-index: 5;
@@ -11,7 +12,6 @@
 
 .minicart__modal{
     width: 23rem;
-    height: 100vh;
     background-color: white;    
     display: flex;
     flex-direction: column;    
@@ -22,7 +22,7 @@
     font-size: 1rem;
     line-height: 1.5;
     color: #212529;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .minicart__header{
@@ -53,15 +53,19 @@
 
 
 .minicart__content{
-    height: 100%;
+    // 100% do elemento pai *overlay* - altura do header do cart - o footer do cart
+
+    height: calc(100% - 72px - 4rem);
     text-align: center;
     padding: 0 1rem;
+    overflow-y: scroll;
     background-color: rgb(249, 249, 249);
     
         .mincart__content-full{
             text-decoration: none;
             list-style: none;
-            display: flex;               
+            display: flex;
+            flex-flow: column nowrap;              
             padding: 0;  
         }
 
