@@ -13,17 +13,17 @@ export default function App(props) {
     <Router>
         { props.children }
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/product/:product">
-            <Product />
-          </Route>
-          
-          {/* ROTA TEMPORARIA */}
-          <Route path="/cart">
-            <ShoppingCart />
-          </Route>
+            <Route exact path="/">
+                <Home />
+            </Route>
+            <Route path="/product/:product">
+                <Product />
+            </Route>
+            {/* INTI ROTA CART TEMPORARIA */}
+            <Route path="/cart">
+                <ShoppingCart />
+            </Route>
+            {/* END ROTA CART TEMPORARIA */}
         </Switch>
     </Router>
   );
