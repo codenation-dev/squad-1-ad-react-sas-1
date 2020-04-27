@@ -3,8 +3,8 @@ import './style.scss'
 // import { Container } from './styles';
 
 export default function ProductInfo(props) {
-  const { name, price, priceDiscount } = props.product
-  const { center } = props
+  const { price, priceDiscount } = props.product
+  const { center, name } = props
   const centerClass = center ? 'center' : '' 
   return (
     <div className={`product-information__description ${centerClass}`.trim()}>
