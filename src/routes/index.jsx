@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -6,12 +6,31 @@ import {
 } from "react-router-dom";
 import Home from './../pages/Home';
 import Product from './../pages/Product'; 
-import ShoppingCart from './../pages/ShoppingCart'; 
+import ShoppingCart from '../components/ShoppingCart'; 
+import Header from "../components/Header";
+import Search from "../components/Search";
 
-export default function App(props) {
+export default function App() {
+  const [ isShoppingCartOpen, setIsShoppingCartOpen ] = useState(false);
+  const [ isSearchOpen, setIsSearchOpen ] = useState(false);
+
   return (
     <Router>
-        { props.children }
+        { isShoppingCartOpen &&
+          <ShoppingCart
+            closeShoppingCart={() => setIsShoppingCartOpen(false)}
+          />
+        }
+        { isSearchOpen &&
+          <Search
+            closeSearch={() => setIsSearchOpen(false)}
+          />
+        }
+        <Header
+          openShoppingCart={() => setIsShoppingCartOpen(true)}
+          openSearch={() => setIsSearchOpen(true)}
+          />
+
         <Switch>
             <Route exact path="/">
                 <Home />
@@ -19,11 +38,6 @@ export default function App(props) {
             <Route path="/product/:product">
                 <Product />
             </Route>
-            {/* INTI ROTA CART TEMPORARIA */}
-            <Route path="/cart">
-                <ShoppingCart />
-            </Route>
-            {/* END ROTA CART TEMPORARIA */}
         </Switch>
     </Router>
   );
