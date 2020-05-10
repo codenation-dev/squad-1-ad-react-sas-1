@@ -3,16 +3,13 @@ import Catalog from '../../components/Catalog';
 
 const Home = () => {
 
-const [productName, setProductName] = useState('');
-  return(
+const Home = (props) => {
+ return(
     <div>
-        <Catalog 
-        name
-        />
-        <h1>{productName}</h1>
-    </div>
-  );
-}
+        <Catalog />
 
-
+        <Footer />
+    </div>)
+};
+  
 export default Home;
