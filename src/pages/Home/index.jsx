@@ -1,17 +1,14 @@
 import React from 'react';
 import Catalog from '../../components/Catalog';
+import Footer from '../../components/Footer';
 
-class Home extends React.Component {
-    constructor(props) {
-        super(props)
-    };
+const Home = (props) => {
+ return(
+    <div>
+        <Catalog />
 
-    render() {
-        return(
-        <div>
-            <Catalog />
-        </div>)
-    }
+        <Footer />
+    </div>)
 };
 
 export default Home;
