@@ -1,7 +1,8 @@
 import axios from 'axios';
+import {API_DOMAIN} from "../enviroment";
 
 const getData = () => {
-    return axios.get('https://5e9935925eabe7001681c856.mockapi.io/api/v1/catalog')
+    return axios.get(`${API_DOMAIN}/api/v1/catalog`)
 };
 
 export default getData;
