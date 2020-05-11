@@ -31,16 +31,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b926093-cc5e-4eef-84da-ca9246d3bfe1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enviroment/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Badge/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Badge/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589116152074</updated>
       <workItem from="1589116153350" duration="106000" />
-      <workItem from="1589230102279" duration="2031000" />
+      <workItem from="1589230102279" duration="2119000" />
     </task>
     <servers />
   </component>
@@ -134,10 +125,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="384" y="310" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1589230999926" />
-    <state x="351" y="189" key="#start" timestamp="1589116258320">
+    <state x="351" y="189" key="#start" timestamp="1589232163984">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="351" y="189" key="#start/0.0.2560.1040@0.0.2560.1040" timestamp="1589116258320" />
+    <state x="351" y="189" key="#start/0.0.2560.1040@0.0.2560.1040" timestamp="1589232163984" />
     <state x="427" y="261" key="FileChooserDialogImpl" timestamp="1589230361952">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
