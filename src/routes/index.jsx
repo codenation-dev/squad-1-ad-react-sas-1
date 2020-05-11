@@ -9,36 +9,40 @@ import Product from './../pages/Product';
 import ShoppingCart from '../components/ShoppingCart'; 
 import Header from "../components/Header";
 import Search from "../components/Search";
+import AppContainer from "../containers/app/AppContainer";
 
 export default function App() {
   const [ isShoppingCartOpen, setIsShoppingCartOpen ] = useState(false);
   const [ isSearchOpen, setIsSearchOpen ] = useState(false);
+  const hasOverlay = isShoppingCartOpen || isSearchOpen
 
   return (
     <Router>
-        { isShoppingCartOpen &&
-          <ShoppingCart
-            closeShoppingCart={() => setIsShoppingCartOpen(false)}
-          />
-        }
-        { isSearchOpen &&
-          <Search
-            closeSearch={() => setIsSearchOpen(false)}
-          />
-        }
-        <Header
-          openShoppingCart={() => setIsShoppingCartOpen(true)}
-          openSearch={() => setIsSearchOpen(true)}
-          />
+        <AppContainer overlay={hasOverlay}>
+            <ShoppingCart
+                active={isShoppingCartOpen}
+                closeShoppingCart={() => setIsShoppingCartOpen(false)}
+            />
 
-        <Switch>
-            <Route exact path="/">
-                <Home />
-            </Route>
-            <Route path="/product/:product">
-                <Product />
-            </Route>
-        </Switch>
+            <Search
+                active={isSearchOpen}
+                closeSearch={() => setIsSearchOpen(false)}
+            />
+
+            <Header
+              openShoppingCart={() => setIsShoppingCartOpen(true)}
+              openSearch={() => setIsSearchOpen(true)}
+              />
+
+            <Switch>
+                <Route exact path="/">
+                    <Home />
+                </Route>
+                <Route path="/product/:product">
+                    <Product />
+                </Route>
+            </Switch>
+        </AppContainer>
     </Router>
   );
 }
