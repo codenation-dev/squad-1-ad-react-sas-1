@@ -8,12 +8,7 @@ const Home = (props) => {
         <Catalog />
 
         <Footer />
-<<<<<<< HEAD
-    </div>
-  )
-=======
     </div>)
->>>>>>> develop
 };
   
 export default Home;

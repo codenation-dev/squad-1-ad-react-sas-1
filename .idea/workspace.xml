@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:config" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3b926093-cc5e-4eef-84da-ca9246d3bfe1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/enviroment/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Badge/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Badge/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1biXznE0fZhSnYuNh2Enf7xG9ku" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista" />
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src" />
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b926093-cc5e-4eef-84da-ca9246d3bfe1" name="Default Changelist" comment="" />
+      <created>1589116152074</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589116152074</updated>
+      <workItem from="1589116153350" duration="106000" />
+      <workItem from="1589230102279" duration="2031000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="config" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="384" y="310" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589230999926">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="384" y="310" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1589230999926" />
+    <state x="351" y="189" key="#start" timestamp="1589116258320">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="351" y="189" key="#start/0.0.2560.1040@0.0.2560.1040" timestamp="1589116258320" />
+    <state x="427" y="261" key="FileChooserDialogImpl" timestamp="1589230361952">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="427" y="261" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1589230361952" />
+    <state width="1256" height="272" key="GridCell.Tab.0.bottom" timestamp="1589232013928">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1256" height="272" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1589232013928" />
+    <state width="1256" height="272" key="GridCell.Tab.0.center" timestamp="1589232013928">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1256" height="272" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1589232013928" />
+    <state width="1256" height="272" key="GridCell.Tab.0.left" timestamp="1589232013928">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1256" height="272" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1589232013928" />
+    <state width="1256" height="272" key="GridCell.Tab.0.right" timestamp="1589232013928">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1256" height="272" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1589232013928" />
+    <state x="148" y="165" key="SettingsEditor" timestamp="1589230516286">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="148" y="165" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1589230516286" />
+    <state x="239" y="249" key="Vcs.Push.Dialog.v2" timestamp="1589232052473">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="239" y="249" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1589232052473" />
+  </component>
+</project>
