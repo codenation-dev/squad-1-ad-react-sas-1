@@ -1,57 +1,39 @@
 import React from "react";
+import Cart from '../Cart'
 import CartItem from '../CartItem';
 import './style.scss'
+import CartFooter from "../CartFooter";
 
-const ShoppingCart = ({ itens, value, closeShoppingCart }) => {
+const ShoppingCart = ({ closeShoppingCart, active }) => {
     const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-    return(
-        <aside className= "minicart__overlay">
-            <div className= "minicart__modal" >
-                <div className= "minicart__header">
-                    <button
-                      className= "button-close"
-                      type= "button"
-                      name= "close cart button"
-                      onClick={closeShoppingCart}>
-                      X
-                    </button>
-                    <span>
-                        sacola({itens})
-                    </span>
-                </div>
-                <div className= "minicart__content">
-                    <ul className= "mincart__content-full">
-                        {
-                          arr.map(item => (
-                            <CartItem
-                              title="Teste"
-                              price="12"
-                              size="M"
-                            />
-                          ))
-                        }
-                    </ul>
-                    <div className= "minicart__content-empty">
-                        <span>
-                            Seu carrinho está vazio :( 
-                        </span>
-                    </div>
-                </div>
-                <div className= "minicart__footer">
-                    <div className= "minicart__footer__button">
-                        <span className= "minicart__footer-full">
-                            Subtotal R${value}
-                        </span>
-                        <a>
-                        <span className="minicart__footer-empty">
-                            Continuar comprando
-                        </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </aside>
+    return (
+        <Cart
+            onClose={closeShoppingCart}
+            title={`sacola(${arr.length})`}
+            active={active}
+        >
+            <div className= "shopping-cart__content">
+                 <ul className= "shopping-cart__content-full">
+                     {
+                       arr.map(item => (
+                         <CartItem
+                           title="Teste"
+                           price="12"
+                           size="M"
+                         />
+                       ))
+                     }
+                 </ul>
+                 <div className= "shopping-cart__content-empty">
+                     <span>
+                         Seu carrinho está vazio :(
+                     </span>
+                 </div>
+             </div>
+
+            <CartFooter />
+        </Cart>
     )
 }
 

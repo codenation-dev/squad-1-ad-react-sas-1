@@ -1,0 +1,10 @@
+@import '../../scss/helpers';
+
+.app-container{
+  &.has--overlay{
+    max-height: 100vh;
+    overflow: hidden;
+
+    @include window-withou-scroll();
+  }
+}
