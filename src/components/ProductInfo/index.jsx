@@ -3,7 +3,7 @@ import './style.scss'
 // import { Container } from './styles';
 
 export default function ProductInfo(props) {
-  const { regular_price, actual_price, center, name } = props.product
+  const {regular_price, actual_price, center, name} = props.product
   const centerClass = center ? 'center' : ''
   let discount = 0;
 
@@ -14,6 +14,7 @@ export default function ProductInfo(props) {
     }
     return discount;
   }
+
   console.log(percentage(regular_price, actual_price));
 
   return (

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import getData from '../../services';
 import Container from "../Container";
 import ProductCatalog from "../ProductCatalog";
@@ -6,66 +6,57 @@ import {
   Link
 } from "react-router-dom";
 import "./style.scss";
+import {useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
+import {setLoading} from "../../actions/app";
+import {setProducts} from "../../actions/products";
 
 const Catalog = () => {
-  const [ products, setProducts ] = useState([]);
+  const [initialized, setInitialized] = useState(false)
+  const loading = useSelector(state => state.appInfo.loading)
+  const products = useSelector(state => state.appProducts.products)
+  const dispatch = useDispatch()
 
-  useEffect(() =>{
-    getData().then(response => {
-      console.log(response.data);
-      setProducts(
-          response.data);
-  })
-  }, []) 
-  
+  useEffect(() => {
+    const fetchProducts = async () => {
+      dispatch(setLoading(false))
+      const { data: products } = await getData()
+
+      setTimeout(() =>{
+        dispatch(setLoading(true))
+        dispatch(setProducts(products))
+        setInitialized(true)
+      }, 3000)
+    };
+
+    fetchProducts()
+  }, [])
+
+  const loadingPlaceholder = Array.from([1,2,3,4]).map((idx) => (
+      <div key={idx} className="catalog__product-container">
+        <ProductCatalog loading={true} />
+      </div>
+  ))
+
+  const producList = products.map((product, idx) => (
+    <Link key={idx} to="/product/exemplo" className="catalog__product-container">
+      <ProductCatalog
+        key={product.images}
+        product={product}
+      />
+    </Link>
+  ))
+
+  const isInitialized = !initialized && !loading
+
+
   return (
     <div className="catalog">
       <Container className="catalog__itens">
-        {
-          products.map((product, index)=>(
-            <Link key={index} to="/product/exemplo" className="catalog__product-container">
-              <ProductCatalog
-                product={product}
-              />
-            </Link>
-          ))
+        { isInitialized
+          ? loadingPlaceholder
+          : producList
         }
-
-
-        {/* <Link to="/product/exemplo" className="catalog__product-container">
-          <ProductCatalog
-            product={{
-              percentage: 15,
-              name: "calça",
-              price: 190.9,
-              img: "https://via.placeholder.com/200x300.png?text=ProdutoCalca",
-            }}
-          />
-        </Link>
-
-        <Link to="/product/exemplo" className="catalog__product-container">
-          <ProductCatalog
-            product={{
-              percentage: 10,
-              name: "bolsa",
-              price: 190.9,
-              priceDiscount: 159.9,
-              img: "https://via.placeholder.com/200x300.png?text=ProdutoBolsa",
-            }}
-          />
-        </Link>
-
-        <Link to="/product/exemplo" className="catalog__product-container">
-          <ProductCatalog
-            product={{
-              percentage: 15,
-              name: "calça",
-              price: 190.9,
-              img: "https://via.placeholder.com/200x300.png?text=ProdutoCalca",
-            }}
-          />
-        </Link> */}
-
       </Container>
     </div>
   );

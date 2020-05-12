@@ -1,7 +1,7 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 
-.minicart{
-  &__overlay{
+.minicart {
+  &__overlay {
     background: rgba(96, 96, 96, 0.4);
     height: calc(100vh);
     width: 100vw;
@@ -16,21 +16,21 @@
     top: 0;
     right: 0;
 
-    &.is--active{
+    &.is--active {
       opacity: 1;
       visibility: visible;
     }
   }
 
-  &__modal{
+  &__modal {
     width: 23rem;
     background-color: white;
     display: flex;
     flex-direction: column;
     z-index: 1010;
-    box-shadow: -0.2rem 0 0.2rem rgba(0,0,0,0.1);
+    box-shadow: -0.2rem 0 0.2rem rgba(0, 0, 0, 0.1);
     margin: 0;
-    font-family: Gotham,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.5;
     color: #212529;
@@ -44,7 +44,7 @@
     }
   }
 
-  &__header{
+  &__header {
     align-items: center;
     border-bottom: .1rem solid #ccc;
     display: flex;
@@ -56,13 +56,13 @@
     font-weight: bold;
     padding: 1rem;
 
-    span{
+    span {
       width: 100%;
       text-align: center;
       padding-right: 1rem;
     }
 
-    .button-close{
+    .button-close {
       border: none;
       background-color: transparent;
     }

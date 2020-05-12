@@ -1,14 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Catalog from '../../components/Catalog';
-import Footer from '../../components/Footer';
 
 const Home = (props) => {
- return(
+  return (
     <div>
-        <Catalog />
-
-        <Footer />
+      <Catalog/>
     </div>)
 };
-  
+
 export default Home;

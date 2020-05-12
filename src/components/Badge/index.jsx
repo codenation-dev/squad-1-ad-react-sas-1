@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 
-const Badge = ({ percentage }) => {
+const Badge = ({percentage}) => {
   return <div className="badge">{percentage}%</div>;
 }
 
