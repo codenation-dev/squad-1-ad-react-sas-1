@@ -8,14 +8,14 @@ body {
   margin: 0 auto;
   display: flex;
   font-family: 'Gotham', sans-serif;
-  
+
   @media screen and (max-width: 568px) {
     width: 100%;
   }
-  
+
 }
 
-.product-image img{
+.product-image img {
   width: 400px;
   height: 680px;
   margin-left: 30px;
@@ -29,7 +29,7 @@ body {
   .product-description__type {
     font-weight: bolder;
     font-size: 1.2em;
-    color:#212429;
+    color: #212429;
   }
 }
 
@@ -40,7 +40,7 @@ body {
 
 .product-description__price {
   font-weight: bold;
-  font-size: 0.8em;  
+  font-size: 0.8em;
 }
 
 .product-description__payment-description {
@@ -85,7 +85,7 @@ body {
   padding: 5px;
   cursor: pointer;
   outline-color: #212429;
-  
+
   background: #212429;
   border: 1px solid #212429;
   border-radius: 3px;

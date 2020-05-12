@@ -1,12 +1,12 @@
 // SOURCE HACKS: http://browserhacks.com/
-@mixin window-withou-scroll{
+@mixin window-withou-scroll {
   // CHORME
-  @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+  @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: .001dpcm) {
     padding-right: 17px;
   }
 
   // FIREFOX
-  @media screen and (min--moz-device-pixel-ratio:0) {
+  @media screen and (min--moz-device-pixel-ratio: 0) {
     padding-right: 17px;
   }
 
