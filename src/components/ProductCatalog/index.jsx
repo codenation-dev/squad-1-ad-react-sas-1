@@ -5,11 +5,12 @@ import "./style.scss";
 
 const ProductCatalog = ({product, loading}) => {
 
-  const {name, image, regular_price, actual_price, percentage} = product;
-  const hasDiscount = actual_price
+  const {name, image, regular_price, actual_price, discount_percentage} = product;
+  const hasDiscount = discount_percentage.toString().includes('%')
     ? "product-catalog has-discount"
     : "product-catalog";
 
+  console.log({ image })
   const isLoding = loading ? 'is--loading' : ''
 
   return (
@@ -17,11 +18,15 @@ const ProductCatalog = ({product, loading}) => {
       ? <div className='product-catalog__loading-wrapper'></div>
       : <div className={`${hasDiscount} ${isLoding}`}>
         <div className="product-catalog__image-wrapper">
-          { percentage !== 0 && <Badge percentage={percentage}/> }
+          { discount_percentage && <Badge text={discount_percentage}/> }
           <img src={image}/>
         </div>
 
-        <ProductInfo center product={{name, regular_price, actual_price}}/>
+        <ProductInfo
+          center
+          name={name}
+          regularPrice={regular_price}
+          discountedPrice={actual_price}/>
       </div>
   )
 }
@@ -32,7 +37,7 @@ ProductCatalog.defaultProps = {
     image: "https://viniciusvinna.netlify.app/assets/api-fashionista/20002605_615_catalog_1.jpg",
     regular_price: 200,
     actual_price: 100,
-    percentage: 0
+    discount_percentage: ''
   }
 }
 
