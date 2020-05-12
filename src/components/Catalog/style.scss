@@ -6,25 +6,28 @@
     flex-flow: row wrap !important;
 
   }
-  
+
   &__product-container {
     text-decoration: none;
     width: 100%;
     margin: 5px auto;
 
-    &:visited{
+    &:visited {
       color: inherit;
     }
 
     @media (min-width: 576px) {
       width: 49%;
-    } // Medium devices (tablets, 768px and up)
+    }
+    // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) {
       width: 32%;
-    } //Large devices] (desktops, 992px and up)
+    }
+    //Large devices] (desktops, 992px and up)
     @media (min-width: 992px) {
       width: 24%;
-    } //Extra large devices(large desktops, 1200px and up)
+    }
+    //Extra large devices(large desktops, 1200px and up)
     @media (min-width: 1200px) {
     }
   }

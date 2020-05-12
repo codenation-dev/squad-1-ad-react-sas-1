@@ -3,27 +3,36 @@ import Badge from "../Badge";
 import ProductInfo from './../ProductInfo'
 import "./style.scss";
 
-class ProductCatalog extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const ProductCatalog = ({product, loading}) => {
 
-  render() {
-    const { name, img, price, priceDiscount, percentage } = this.props.product;
-    const hasDiscount = priceDiscount
-      ? "product-catalog has-discount"
-      : "product-catalog";
+  const {name, image, regular_price, actual_price, percentage} = product;
+  const hasDiscount = actual_price
+    ? "product-catalog has-discount"
+    : "product-catalog";
 
-    return (
-      <div className={hasDiscount}>
+  const isLoding = loading ? 'is--loading' : ''
+
+  return (
+    isLoding
+      ? <div className='product-catalog__loading-wrapper'></div>
+      : <div className={`${hasDiscount} ${isLoding}`}>
         <div className="product-catalog__image-wrapper">
-          <Badge percentage={percentage} />
-          <img src={img} />
+          { percentage !== 0 && <Badge percentage={percentage}/> }
+          <img src={image}/>
         </div>
-        
-        <ProductInfo center product={{ name, price, priceDiscount }}/>
+
+        <ProductInfo center product={{name, regular_price, actual_price}}/>
       </div>
-    );
+  )
+}
+
+ProductCatalog.defaultProps = {
+  product: {
+    name: 'foo',
+    image: "https://viniciusvinna.netlify.app/assets/api-fashionista/20002605_615_catalog_1.jpg",
+    regular_price: 200,
+    actual_price: 100,
+    percentage: 0
   }
 }
 

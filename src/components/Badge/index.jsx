@@ -1,14 +1,8 @@
 import React from "react";
 import "./style.scss";
 
-class Badge extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return <div className="badge">{this.props.percentage}%</div>;
-  }
+const Badge = ({percentage}) => {
+  return <div className="badge">{percentage}%</div>;
 }
 
 export default Badge;

@@ -1,32 +1,32 @@
 .product-information {
-    &__description {
-      text-align: left;
+  &__description {
+    text-align: left;
 
-        &.center{
-            text-align: center;
-        }
+    &.center {
+      text-align: center;
     }
-  
-    &__name {
-      font-weight: bold;
-    }
-  
-    &__price {
-      margin: 0 5px 0 5px;
-  
-      .has-discount & {
-        &.is-regular {
-          text-decoration: line-through;
-          color: #c6c6c6;
-        }
-  
-        &.is-discount {
-          display: inline;
-        }
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &__price {
+    margin: 0 5px 0 5px;
+
+    .has-discount & {
+      &.is-regular {
+        text-decoration: line-through;
+        color: #c6c6c6;
       }
+
       &.is-discount {
-        display: none;
+        display: inline;
       }
     }
+
+    &.is-discount {
+      display: none;
+    }
+  }
 }
-  
