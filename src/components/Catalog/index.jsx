@@ -52,6 +52,7 @@ const Catalog = () => {
 
   return (
     <div className="catalog">
+      <div className="catalog__news">OFERTAS</div>
       <Container className="catalog__itens">
         { isInitialized
           ? loadingPlaceholder

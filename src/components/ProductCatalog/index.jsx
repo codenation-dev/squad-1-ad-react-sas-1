@@ -15,11 +15,17 @@ const ProductCatalog = ({product, loading}) => {
 
   return (
     isLoding
-      ? <div className='product-catalog__loading-wrapper'></div>
+      ? (
+        <>
+        <div className='product-catalog__loading-wrapper'></div>
+        <div className='product-catalog__loading-wrapper'></div>
+        <div className='product-catalog__loading-wrapper'></div>
+      </>
+      )
       : <div className={`${hasDiscount} ${isLoding}`}>
         <div className="product-catalog__image-wrapper">
           { discount_percentage && <Badge text={discount_percentage}/> }
-          <img src={image}/>
+          <img src={image} alt="produtos"/>
         </div>
 
         <ProductInfo

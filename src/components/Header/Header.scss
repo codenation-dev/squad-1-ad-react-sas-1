@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 .main-header {
   background-color: #fff;
 
@@ -16,9 +18,9 @@
 
   &__title {
     margin: 0;
-    font-family: 'Gwyner', serif;
+    font-family: 'Roboto', serif;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 1px;
     font-size: 40px;
 
@@ -27,8 +29,15 @@
     }
   }
 
+
+  &__subtitle {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+
   &__icons {
-    font-size: 15px;
+    font-size: 22px;
     border: none;
     padding: 0;
     margin: 0 10px;
@@ -55,13 +64,18 @@
       right: -13px;
       background-color: red;
       color: #fff;
+      font-size: 13px;
       font-weight: bold;
       border-radius: 50%;
-      min-width: 25px;
-      height: 25px;
+      min-width: 18px;
+      height: 18px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
+  }
+
+  &__title:hover , &__subtitle:hover {
+    color: #bea203d0;
   }
 }
