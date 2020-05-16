@@ -26,31 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b926093-cc5e-4eef-84da-ca9246d3bfe1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cart/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/Cart.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cart/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CartItem/CartItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartItem/CartItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CartItem/CartItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartItem/CartItem.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Catalog/Catalog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Catalog/Catalog.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Catalog/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Catalog/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Catalog/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Catalog/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductCatalog/ProductCatalog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCatalog/ProductCatalog.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductCatalog/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCatalog/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductInfo/ProductInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductInfo/ProductInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Search/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Search/Search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ShoppingCart/ShoppingCart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShoppingCart/ShoppingCart.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ShoppingCart/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShoppingCart/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Product/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Product/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +99,7 @@
       <updated>1589116152074</updated>
       <workItem from="1589116153350" duration="106000" />
       <workItem from="1589230102279" duration="10279000" />
-      <workItem from="1589636684001" duration="17269000" />
+      <workItem from="1589636684001" duration="17650000" />
     </task>
     <servers />
   </component>
