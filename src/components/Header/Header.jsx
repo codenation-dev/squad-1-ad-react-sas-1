@@ -13,7 +13,7 @@ function Header({openShoppingCart, openSearch}) {
         <Link to="/" className="main-header__link">
           <h1 className="main-header__title">BARRY&BERRY</h1>
         </Link>
-        <div>
+        <div className="main-header__icons-container">
           <span className="main-header__subtitle">CONTATOS</span>
           <span className="main-header__subtitle">MINHA CONTA</span>
           <button className="main-header__icons"

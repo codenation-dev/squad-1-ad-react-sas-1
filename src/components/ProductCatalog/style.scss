@@ -69,17 +69,6 @@
   &__product-price {
     margin: 0 5px 0 5px;
 
-    .has-discount & {
-      &.is-regular {
-        text-decoration: line-through;
-        color: #c6c6c6;
-      }
-
-      &.is-discount {
-        display: inline;
-      }
-    }
-
     &.is-discount {
       display: none;
     }

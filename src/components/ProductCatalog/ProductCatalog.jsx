@@ -7,8 +7,6 @@ const ProductCatalog = ({product, loading}) => {
 
   const {name, image, regular_price, actual_price, discount_percentage} = product;
   const hasDiscount = discount_percentage.toString().includes('%')
-    ? "product-catalog has-discount"
-    : "product-catalog";
 
   console.log({ image })
   const isLoding = loading ? 'is--loading' : ''
@@ -16,13 +14,14 @@ const ProductCatalog = ({product, loading}) => {
   return (
     isLoding
       ? <div className='product-catalog__loading-wrapper'></div>
-      : <div className={`${hasDiscount} ${isLoding}`}>
+      : <div className={`product-catalog ${isLoding}`}>
         <div className="product-catalog__image-wrapper">
           { discount_percentage && <Badge text={discount_percentage}/> }
           <img src={image} alt="produto"/>
         </div>
       
         <ProductInfo
+          discount={hasDiscount}
           center
           name={name}
           regularPrice={regular_price}

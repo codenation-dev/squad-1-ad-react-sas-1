@@ -1,0 +1,59 @@
+.product-image {
+  img{
+    width: 100%;
+  }
+}
+
+.product-description {
+
+  .product-description__type {
+    font-weight: bolder;
+    font-size: 1.2em;
+    color: #212429;
+  }
+}
+
+.price_box {
+  display: flex;
+  margin-top: -15px;
+}
+
+.product-description__price {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.product-description__payment-description {
+  color: #b1b0b0;
+  font-size: 0.8em;
+  justify-content: flex-end;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.product-description__size {
+  color: #b1b0b0;
+  font-size: 0.78rem;
+  display: block;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+// styling buttons
+
+.button_size {
+  width: 25px;
+  height: 28px;
+  padding: 0;
+  font-weight: bold;
+  text-align: center;
+  font-size: 12px;
+  background-color: #F9F9F9;
+  border: 1px solid #ccc8c8;
+  border-radius: 3px;
+  cursor: pointer;
+  outline-color: #212429;
+  margin: 0 2px;
+}
+
+
