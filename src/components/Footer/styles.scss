@@ -6,13 +6,6 @@
 
   color: #FFFF;
 
-  .footer-details, li {
-    list-style: none;
-    padding: 0;
-    font-size: 0.95rem;
-    cursor: pointer;
-  }
-
   .footer-subscription {
     display: flex;
     flex-direction: column;
@@ -63,6 +56,14 @@
     width: fit-content;
     min-width: 120px;
     margin: 0 auto;
+  }
+  .footer-details, li {
+    list-style: none;
+    padding: 0;
+    font-size: 0.95rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    cursor: pointer;
   }
 }
 

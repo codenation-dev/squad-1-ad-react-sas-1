@@ -1,7 +1,16 @@
 import React from 'react';
-// import HeroImage from '../../assets/img/background.jpg';
 
 import './style.scss';
+
+// const heroBackground = document.querySelector('.hero');
+
+// const scrollAmount = 0;
+// window.addEventListener('scroll', (event) => {
+//   const { top } = heroBackground.getBoundClientReact();
+//   if (top - window.innerHeight < scrollAmount) {
+//     heroBackground.style.animation = 'fadeOut 1s ease-in-out';
+//   }
+// })
 
 const Hero = () => {
   return (

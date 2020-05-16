@@ -2,7 +2,7 @@ import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faSearch, faShoppingBag} from '@fortawesome/free-solid-svg-icons';
 
-import './Header.scss';
+import './styles.scss';
 import Container from "../Container/Container";
 import {Link} from 'react-router-dom';
 

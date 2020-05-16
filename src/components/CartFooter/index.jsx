@@ -8,7 +8,7 @@ const CartFooter = () => {
                  <span className="cart-footer__with-currency">
                      Subtotal R$ 100.00
                  </span>
-        <a>
+        <a href="/#">
                      <span className="cart-footer__empty">
                          Continuar comprando
                      </span>

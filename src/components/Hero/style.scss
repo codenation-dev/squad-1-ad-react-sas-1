@@ -1,11 +1,12 @@
 .hero {
-  width: 100%;
+  width: 100vw;
   height: 550px;
 
-  background: url("../../assets/img/background-01.jpg") no-repeat;
+  background: url("../../assets/img/background-01.jpg") no-repeat center fixed;
   background-size: cover;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
 
   margin-bottom: 60px;
+
 }
