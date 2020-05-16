@@ -1,6 +1,6 @@
 import React from 'react';
+import Catalog from '../../containers/Catalog';
 import Hero from '../../components/Hero';
-import Catalog from '../../components/Catalog';
 
 const Home = () => {
   return (

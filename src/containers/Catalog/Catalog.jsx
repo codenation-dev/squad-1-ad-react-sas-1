@@ -1,7 +1,4 @@
 import React, {useState, useEffect} from "react";
-import getData from '../../services';
-import Container from "../Container";
-import ProductCatalog from "../ProductCatalog";
 import {
   Link
 } from "react-router-dom";
@@ -10,6 +7,9 @@ import {useSelector} from "react-redux";
 import {useDispatch} from "react-redux";
 import {setLoading} from "../../actions/app";
 import {setProducts} from "../../actions/products";
+import getData from "../../services";
+import ProductCatalog from "../../components/ProductCatalog";
+import Container from "../../components/Container";
 
 const Catalog = () => {
   const [initialized, setInitialized] = useState(false)
@@ -26,7 +26,7 @@ const Catalog = () => {
         dispatch(setLoading(true))
         dispatch(setProducts(products))
         setInitialized(true)
-      }, 3000)
+      }, 0)
     };
 
     fetchProducts()
@@ -39,12 +39,15 @@ const Catalog = () => {
   ))
 
   const producList = products.map((product, idx) => (
-    <Link key={idx} to="/product/exemplo" className="catalog__product-container">
-      <ProductCatalog
-        key={product.images}
-        product={product}
-      />
-    </Link>
+    <div className="catalog__product-container">
+      <Link key={idx} to="/product/exemplo" className="catalog__product-info">
+        <ProductCatalog
+          key={product.images}
+          product={product}
+        />
+      </Link>
+      <button className="fs-button catalog__product-button">Adicionar ao carrinho</button>
+    </div>
   ))
 
   const isInitialized = !initialized && !loading

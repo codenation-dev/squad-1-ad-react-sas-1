@@ -1,10 +1,15 @@
 import React from "react";
-// import CartItem from '../CartItem';
+import CartItem from '../CartItem';
 import './Search.scss'
 import Cart from "../Cart";
 
 const Search = ({itens, value, closeSearch, active}) => {
-  // const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const cardItemVisibilityConfig = {
+    removeButton: false,
+    size: false,
+    quantity: false,
+  }
 
   return (
     <Cart
@@ -12,9 +17,38 @@ const Search = ({itens, value, closeSearch, active}) => {
       title={`Digite algo`}
       active={active}
     >
-      <div className="search">
-        procurar produtos
-      </div>
+      <Container className="search">
+
+        <div className="search__input-container">
+          <div className="form-field">
+            <input type="text"/>
+          </div>
+          <div className="search__product-numbers">5 items</div>
+        </div>
+
+        <div className="search__content">
+          <ul className="search__content-full">
+            {
+              arr.map((item,idx) => (
+                <li className="search__content-item">
+                  <CartItem
+                    visibilityConfig={cardItemVisibilityConfig}
+                    key={idx}
+                    title="Teste"
+                    price="12"
+                    size="M"
+                  />
+                </li>
+              ))
+            }
+          </ul>
+          <div className="search__content-empty">
+           <span>
+               Seu carrinho está vazio :(
+           </span>
+          </div>
+        </div>
+      </Container>
     </Cart>
   )
 

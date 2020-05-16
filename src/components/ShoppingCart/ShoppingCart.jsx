@@ -17,12 +17,14 @@ const ShoppingCart = ({closeShoppingCart, active}) => {
         <ul className="shopping-cart__content-full">
           {
             arr.map((item,idx) => (
-              <CartItem
-                key={idx}
-                title="Teste"
-                price="12"
-                size="M"
-              />
+              <li className="shopping-cart__content-item">
+                <CartItem
+                  key={idx}
+                  title="Teste"
+                  price="12"
+                  size="M"
+                />
+              </li>
             ))
           }
         </ul>

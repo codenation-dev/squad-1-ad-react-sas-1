@@ -27,9 +27,30 @@
   <component name="ChangeListManager">
     <list default="true" id="3b926093-cc5e-4eef-84da-ca9246d3bfe1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Catalog/Catalog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Catalog/Catalog.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cart/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/Cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cart/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CartItem/CartItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartItem/CartItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CartItem/CartItem.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartItem/CartItem.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Catalog/Catalog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Catalog/Catalog.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Catalog/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Catalog/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Catalog/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Catalog/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductCatalog/ProductCatalog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCatalog/ProductCatalog.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductCatalog/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCatalog/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductInfo/ProductInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductInfo/ProductInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search/Search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ShoppingCart/ShoppingCart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShoppingCart/ShoppingCart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ShoppingCart/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShoppingCart/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Product/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Product/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,16 +85,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Kelvin\Projects\React\fashionista" />
-      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\components\ShoppingCart" />
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\components\Search" />
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\components\ProductInfo" />
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\components\ProductCatalog" />
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\components\Header" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\containers" />
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\scss\theme" />
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista" />
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src" />
     </key>
   </component>
   <component name="RunManager">
@@ -100,8 +123,7 @@
       <updated>1589116152074</updated>
       <workItem from="1589116153350" duration="106000" />
       <workItem from="1589230102279" duration="10279000" />
-      <workItem from="1589636684001" duration="2282000" />
-      <workItem from="1589655586091" duration="502000" />
+      <workItem from="1589636684001" duration="17269000" />
     </task>
     <servers />
   </component>
@@ -148,22 +170,22 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="427" y="261" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1589230361952" />
-    <state width="1420" height="273" key="GridCell.Tab.0.bottom" timestamp="1589655572150">
+    <state width="1258" height="273" key="GridCell.Tab.0.bottom" timestamp="1589637605275">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1420" height="273" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1589655572150" />
-    <state width="1420" height="273" key="GridCell.Tab.0.center" timestamp="1589655572150">
+    <state width="1258" height="273" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1589637605275" />
+    <state width="1258" height="273" key="GridCell.Tab.0.center" timestamp="1589637605275">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1420" height="273" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1589655572150" />
-    <state width="1420" height="273" key="GridCell.Tab.0.left" timestamp="1589655572150">
+    <state width="1258" height="273" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1589637605275" />
+    <state width="1258" height="273" key="GridCell.Tab.0.left" timestamp="1589637605275">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1420" height="273" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1589655572150" />
-    <state width="1420" height="273" key="GridCell.Tab.0.right" timestamp="1589655572150">
+    <state width="1258" height="273" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1589637605275" />
+    <state width="1258" height="273" key="GridCell.Tab.0.right" timestamp="1589637605275">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1420" height="273" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1589655572150" />
+    <state width="1258" height="273" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1589637605275" />
     <state x="148" y="165" key="SettingsEditor" timestamp="1589242798114">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

@@ -15,6 +15,7 @@
     display: flex;
     flex-flow: column nowrap;
     padding: 0;
+    margin-top: 0;
   }
 
   &__content-empty {
@@ -22,29 +23,9 @@
     margin-top: 50px;
   }
 
-  &__content__item {
-    min-width: 100%;
+  &__content-item{
+    padding: 10px 0;
     border-bottom: 1px solid #ccc;
-    display: flex;
-
-    .content__item__media {
-      max-width: 65px;
-      overflow: hidden;
-
-      img {
-        width: 100%;
-      }
-
-      .item__media__button-remove {
-        border: none;
-        background-color: transparent;
-        font-size: 8px;
-        color: red;
-        padding: 0;
-
-      }
-    }
-
   }
 }
 
