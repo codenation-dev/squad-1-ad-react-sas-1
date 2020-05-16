@@ -1,10 +1,10 @@
 import React from "react";
-import CartItem from '../CartItem';
+// import CartItem from '../CartItem';
 import './Search.scss'
 import Cart from "../Cart";
 
 const Search = ({itens, value, closeSearch, active}) => {
-  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  // const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   return (
     <Cart

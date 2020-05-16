@@ -9,6 +9,7 @@
 
   &__name {
     font-weight: bold;
+    color: #252424;
   }
 
   &__price {
@@ -17,11 +18,12 @@
     .has-discount & {
       &.is-regular {
         text-decoration: line-through;
-        color: #c6c6c6;
+        color: #999595e1;
       }
 
       &.is-discount {
         display: inline;
+        color: #bea203d0;
       }
     }
 
@@ -29,4 +31,8 @@
       display: none;
     }
   }
+}
+
+.product-information__price, .is-regular {
+  color: #bea203d0;
 }

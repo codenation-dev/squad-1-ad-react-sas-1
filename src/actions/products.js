@@ -1,5 +1,6 @@
-import {globalActionApp, productionActionTypes} from "../constants/store";
+import {productionActionTypes} from "../constants/store";
 
+// globalActionApp,
 /**
  *
  * @param {Array} products
