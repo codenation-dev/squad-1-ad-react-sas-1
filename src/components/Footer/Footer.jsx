@@ -55,6 +55,9 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      <div className="footer-credits">
+         <span role="img" aria-label="coração" >feito por squad one 🧡 AceleraDev - todos os direitos reservados.</span>
+      </div>
     </div>
   )
 }

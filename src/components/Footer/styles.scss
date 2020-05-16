@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
 .footer {
   width: 100%;
   background-color: #111111;
@@ -64,6 +66,22 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: normal;
     cursor: pointer;
+  }
+
+  .footer-credits {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    span {
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+    }
+    span:hover {
+      color: #bea203d0;
+      cursor: pointer;
+    }
   }
 }
 
