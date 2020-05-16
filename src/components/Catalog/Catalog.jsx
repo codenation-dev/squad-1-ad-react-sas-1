@@ -30,7 +30,7 @@ const Catalog = () => {
     };
 
     fetchProducts()
-  },)
+  },[])
 
   const loadingPlaceholder = Array.from([1,2,3,4]).map((idx) => (
       <div key={idx} className="catalog__product-container">
