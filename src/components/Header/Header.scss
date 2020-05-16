@@ -35,13 +35,13 @@
   &__subtitle {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    margin-left: 10px;
+    margin-right: 10px;
     cursor: pointer;
   }
 
 
   &__icons {
-    font-size: 22px;
+    font-size: 18px;
     border: none;
     padding: 0;
     margin: 0 10px;
@@ -57,6 +57,13 @@
     &:last-of-type {
       margin: 0;
     }
+  }
+
+  &__icons-container{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
 
   .icon__bag {

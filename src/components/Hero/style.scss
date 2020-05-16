@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
 .hero {
-  width: 100%;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: relative;
   height: 550px;
+  overflow: hidden;
 
-  background: url("../../assets/img/background-01.jpg") no-repeat center fixed;
-  background-size: cover;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
 
-  margin-bottom: 60px;
+
+  &__image-wrapper{
+    width: 100vw;
+    height: 550px;
+    background: url("../../assets/img/background-01.jpg") no-repeat center fixed;
+    background-size: cover;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-bottom: 60px;
+  }
 }
 
 .catalog_header {

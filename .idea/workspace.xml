@@ -8,6 +8,16 @@
       </path>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:fix" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
       <path>
@@ -15,18 +25,35 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:fix" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:develop" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/style-adjusts" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b926093-cc5e-4eef-84da-ca9246d3bfe1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Search/Search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.scss" afterDir="false" />
+    <list default="true" id="b1095a91-7fd3-4450-bc87-5e3555122145" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +69,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/codenation-dev/squad-1-ad-react-sas-1.git" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1biXznE0fZhSnYuNh2Enf7xG9ku" />
   <component name="ProjectViewState">
@@ -146,22 +180,22 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="427" y="261" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1589230361952" />
-    <state width="1258" height="273" key="GridCell.Tab.0.bottom" timestamp="1589637605275">
+    <state width="1420" height="272" key="GridCell.Tab.0.bottom" timestamp="1589657005678">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1258" height="273" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1589637605275" />
-    <state width="1258" height="273" key="GridCell.Tab.0.center" timestamp="1589637605275">
+    <state width="1420" height="272" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1589657005678" />
+    <state width="1420" height="272" key="GridCell.Tab.0.center" timestamp="1589657005678">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1258" height="273" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1589637605275" />
-    <state width="1258" height="273" key="GridCell.Tab.0.left" timestamp="1589637605275">
+    <state width="1420" height="272" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1589657005678" />
+    <state width="1420" height="272" key="GridCell.Tab.0.left" timestamp="1589657005678">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1258" height="273" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1589637605275" />
-    <state width="1258" height="273" key="GridCell.Tab.0.right" timestamp="1589637605275">
+    <state width="1420" height="272" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1589657005678" />
+    <state width="1420" height="272" key="GridCell.Tab.0.right" timestamp="1589657005678">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1258" height="273" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1589637605275" />
+    <state width="1420" height="272" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1589657005678" />
     <state x="148" y="165" key="SettingsEditor" timestamp="1589242798114">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -170,9 +204,9 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="239" y="249" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1589232052473" />
-    <state x="297" y="230" key="search.everywhere.popup" timestamp="1589242742320">
+    <state x="297" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1589657179805">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="297" y="230" key="search.everywhere.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1589242742320" />
+    <state x="297" y="230" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1589657179805" />
   </component>
 </project>
