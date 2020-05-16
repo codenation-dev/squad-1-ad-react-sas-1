@@ -19,9 +19,9 @@ const ProductCatalog = ({product, loading}) => {
       : <div className={`${hasDiscount} ${isLoding}`}>
         <div className="product-catalog__image-wrapper">
           { discount_percentage && <Badge text={discount_percentage}/> }
-          <img src={image}/>
+          <img src={image} alt="produto"/>
         </div>
-
+      
         <ProductInfo
           center
           name={name}

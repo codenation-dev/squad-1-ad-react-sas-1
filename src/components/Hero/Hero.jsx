@@ -4,7 +4,10 @@ import './style.scss';
 
 const Hero = () => {
   return (
-  <div className="hero"/>
+  <React.Fragment>
+    <div className="hero"/>
+    <div className="catalog_header">OFERTAS</div>
+  </React.Fragment>
   )
 };
 

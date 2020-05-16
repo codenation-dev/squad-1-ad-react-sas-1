@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
 .hero {
   width: 100vw;
   height: 550px;
@@ -8,5 +10,12 @@
   border-bottom: 3px solid black;
 
   margin-bottom: 60px;
+}
 
+.catalog_header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 40px;
 }
