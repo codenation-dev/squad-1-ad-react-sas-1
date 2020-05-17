@@ -4,5 +4,5 @@
 
 // GLOABL ACTIONS
 export const globalActionApp = {
-  LOADING: 'LOADING'
+  LOADING: 'GLOABL_LOADING'
 }

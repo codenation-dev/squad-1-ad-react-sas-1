@@ -1,8 +1,7 @@
 import React from "react"
 import './CartItem.scss';
 
-const CartItem = ({ product, total, visibilityConfig, onRemove, onAddOne, onRemoveOne }) => {
-  console.log(product)
+const CartItem = ({ product, totalItems, visibilityConfig, onRemove, onAddOne, onRemoveOne, onClick }) => {
   const  {
     name,
     size,
@@ -17,12 +16,12 @@ const CartItem = ({ product, total, visibilityConfig, onRemove, onAddOne, onRemo
   } = visibilityConfig
 
   return (
-      <div className="cart-item">
+      <div className="cart-item" onClick={() => onClick(product)} >
         <div className="cart-item__media">
-          <img src={image} alt="foto em miniatura do produto escolhido"/>
+          <img src={image} />
           { removeButtonVisibility &&
             <button type="button"
-              onClick={onRemove}
+              onClick={() => onRemove(product)}
               name="remover item"
               className="cart-item__button-remove">
             Remover item
@@ -42,9 +41,9 @@ const CartItem = ({ product, total, visibilityConfig, onRemove, onAddOne, onRemo
             </div>
           </div>
           { quantityVisibility && <div className="cart-item__quantity">
-            <button onClick={onRemoveOne} className="cart-item__quantity-button"> - </button>
-            <span className="cart-item__quantity-value">{total}</span>
-            <button onClick={onAddOne} className="cart-item__quantity-button">+</button>
+            <button onClick={() => onRemoveOne(product)} className="cart-item__quantity-button"> - </button>
+            <span className="cart-item__quantity-value">{totalItems}</span>
+            <button onClick={() => onAddOne(product)} className="cart-item__quantity-button">+</button>
           </div> }
         </div>
       </div>
@@ -64,7 +63,7 @@ CartItem.defaultProps = {
     size: "<no prop size>",
     sku: "<no prop sku>"
   },
-  total: '<no prop total>',
+  totalItems: '<no prop total>',
   visibilityConfig: {
     removeButton: true,
     size: true,
@@ -72,7 +71,8 @@ CartItem.defaultProps = {
   },
   onRemove: () => { alert('no fn on prop {onRemove}')},
   onAddOne: () => { alert('no fn on prop {onAddOne}')},
-  onRemoveOne: () => { alert('no fn on prop {onRemoveOne}')}
+  onRemoveOne: () => { alert('no fn on prop {onRemoveOne}')},
+  onClick: () => {}
 }
 
 export default CartItem;
