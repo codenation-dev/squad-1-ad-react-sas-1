@@ -1,5 +1,11 @@
 .main-header {
   background-color: #fff;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  box-shadow: 1px 3px 3px rgba(0,0,0,0.7);
+  position: fixed;
 
   a {
     text-decoration: none;

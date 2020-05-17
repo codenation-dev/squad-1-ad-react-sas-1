@@ -1,5 +1,6 @@
 import ProductCatalog from "../../../components/ProductCatalog";
 import React from "react";
+import { useHistory } from "react-router-dom";
 import {addCartItem, closeCart, openCart} from '../../../actions/cart'
 import {toastyInfo} from "../../../modules/toasty/toastyTypes";
 import sanitazeProduct from "../../../modules/products/sanitazeProductData";
@@ -9,6 +10,7 @@ import {delay} from "../../../modules/time";
 
 const CatalogProducts = ({ items }) => {
   const dispatch = useDispatch()
+  const history = useHistory()
 
   const addItemToCart = (products, selected) => {
 
@@ -17,7 +19,6 @@ const CatalogProducts = ({ items }) => {
       ...products,
       selected
     }
-
 
     dispatch(addCartItem(formatedProduct))
     fastSwitchToggleCart()
@@ -30,10 +31,15 @@ const CatalogProducts = ({ items }) => {
     return true
   }
 
+  function handleClick() {
+    history.push('product/example')
+  }
+
   return (items.map((product, idx) => (
     <div key={idx} className="catalog__product-container">
       <ProductCatalog
         key={product.images}
+        onClickImage={(product) => handleClick(product)}
         product={product}
       >{(productRef, selected) => {
         return <button

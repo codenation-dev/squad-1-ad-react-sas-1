@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import Badge from "../Badge";
 import ProductInfo from './../ProductInfo'
 import "./style.scss";
 
-const ProductCatalog = ({product, loading,onSizeSelected, initialSize, children}) => {
+const ProductCatalog = ({product, loading, children, onClickImage}) => {
 
   const [selected, setSelected] = useState({ size: null, sku: null })
   const {name, image, regular_price, actual_price, discount_percentage} = product;
@@ -12,14 +12,10 @@ const ProductCatalog = ({product, loading,onSizeSelected, initialSize, children}
   const { color_slug, code_color } = product
   const isLoading = loading ? 'is--loading' : ''
   const isSelected = (inputValue) => {
-    return selected && selected.size === inputValue ? 'is--selected': ''
+    return selected && selected.size === inputValue ? 'is--selected' : ''
   }
 
   const availableSizes = product.sizes.filter(({available}) => available)
-
-  useEffect(() => {
-    setSelected(initialSize)
-  },[])
 
   return (
     isLoading
@@ -27,7 +23,9 @@ const ProductCatalog = ({product, loading,onSizeSelected, initialSize, children}
       : <div className={`product-catalog ${isLoading}`}>
         <div className="product-catalog__image-wrapper">
           { discount_percentage && <Badge text={discount_percentage}/> }
-          <img src={image} loading="lazy" alt="produto"/>
+          <img
+            onClick={(e) => onClickImage(e)}
+            src={image} loading="lazy" alt="produto"/>
         </div>
 
         <ProductInfo
