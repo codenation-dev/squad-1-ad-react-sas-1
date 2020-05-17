@@ -1,11 +1,13 @@
 import React from 'react';
-import Catalog from '../../components/Catalog';
+import Catalog from '../../containers/Catalog';
+import Hero from '../../components/Hero';
 
-const Home = (props) => {
+const Home = () => {
   return (
-    <div>
+    <React.Fragment>
+      <Hero />
       <Catalog/>
-    </div>)
+    </React.Fragment>)
 };
 
 export default Home;

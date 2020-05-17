@@ -12,13 +12,17 @@
     align-items: center;
     padding: 20px;
     flex-flow: row;
+
+    @media screen and (max-width: 600px) {
+      flex-flow: column;
+    }
   }
 
   &__title {
     margin: 0;
-    font-family: 'Gwyner', serif;
+    font-family: 'Roboto', serif;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 1px;
     font-size: 40px;
 
@@ -27,8 +31,17 @@
     }
   }
 
+
+  &__subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+
   &__icons {
-    font-size: 15px;
+    font-size: 18px;
     border: none;
     padding: 0;
     margin: 0 10px;
@@ -42,8 +55,15 @@
     }
 
     &:last-of-type {
-      margin-right: 0;
+      margin: 0;
     }
+  }
+
+  &__icons-container{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
 
   .icon__bag {
@@ -55,13 +75,18 @@
       right: -13px;
       background-color: red;
       color: #fff;
+      font-size: 13px;
       font-weight: bold;
       border-radius: 50%;
-      min-width: 25px;
-      height: 25px;
+      min-width: 18px;
+      height: 18px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
+  }
+
+  &__title:hover , &__subtitle:hover {
+    color: #bea203d0;
   }
 }

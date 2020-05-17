@@ -1,8 +1,3 @@
-import React from "react";
-import "./style.scss";
-
-const Badge = ({text}) => {
-  return <div className="badge">{text}</div>;
-}
+import Badge from "./Badge";
 
 export default Badge;

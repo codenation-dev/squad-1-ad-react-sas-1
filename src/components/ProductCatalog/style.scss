@@ -69,19 +69,42 @@
   &__product-price {
     margin: 0 5px 0 5px;
 
-    .has-discount & {
-      &.is-regular {
-        text-decoration: line-through;
-        color: #c6c6c6;
-      }
-
-      &.is-discount {
-        display: inline;
-      }
-    }
-
     &.is-discount {
       display: none;
+    }
+  }
+
+  &__sizes-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    input{
+      width: 0;
+      height: 0;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__size-item{
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    text-align: center;
+    background: #212429;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px transparent, 0 0 0 6px transparent;
+    padding: 2px;
+    font-size: 14px;
+    margin: 0 10px;
+    transition: box-shadow 225ms ease-in-out;
+
+    &.is--selected{
+      box-shadow: 0 0 0 3px #fff, 0 0 0 6px #dab931;
     }
   }
 }

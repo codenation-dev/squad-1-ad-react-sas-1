@@ -1,1 +1,6 @@
-$red: blue;
+$default-black-button: #212429;
+
+$button: (
+  'background-color': $default-black-button,
+  'background-color-hover': lighten($default-black-button,10%)
+)

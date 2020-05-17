@@ -1,7 +1,7 @@
 import { productionActionTypes } from '../constants/store';
 
 const INITIAL_STATE = {
-  products: [
+  items: [
   ]
 };
 
@@ -13,7 +13,7 @@ export const productsReducer = (state = INITIAL_STATE, action) => {
 
       return {
         ...state,
-        products: [...payload.products]
+        items: [...payload]
       }
 
     default:

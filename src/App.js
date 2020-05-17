@@ -1,13 +1,16 @@
 import React from 'react';
 import Router from './routes'
+import {Provider} from "react-redux";
+import './scss/theme/index.scss'
 import './App.scss';
+import store from "./store";
 
 function App() {
   return (
-    <React.Fragment>
+    <Provider store={store}>
       <Router>
       </Router>
-    </React.Fragment>
+    </Provider>
   );
 }
 

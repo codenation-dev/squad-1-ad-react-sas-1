@@ -5,6 +5,7 @@
     background: rgba(96, 96, 96, 0.4);
     height: calc(100vh);
     width: 100vw;
+    overflow: hidden;
     max-width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -46,7 +47,6 @@
 
   &__header {
     align-items: center;
-    border-bottom: .1rem solid #ccc;
     display: flex;
     height: 4rem;
     justify-content: space-between;
@@ -67,6 +67,10 @@
       background-color: transparent;
     }
 
+  }
+
+  &__content{
+    max-height: 100vh;
   }
 }
 
