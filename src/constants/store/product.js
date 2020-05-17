@@ -1,0 +1,8 @@
+/*
+ * Constantes / ActionTypes
+ */
+
+// PRODUCT ACTIONS
+export const productionActionTypes = {
+  SET_PRODUCTS: 'SET_PRODUCTS'
+};
