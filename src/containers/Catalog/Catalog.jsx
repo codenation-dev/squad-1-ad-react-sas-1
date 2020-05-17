@@ -8,6 +8,7 @@ import getData from "../../services";
 import Container from "../../components/Container";
 import CatalogLoading from "./components/CatalogLoading";
 import CatalogProducts from "./components/CatalogProducts";
+import {isValidProduct} from "../../modules/products/validations";
 
 const Catalog = () => {
   const [initialized, setInitialized] = useState(false)
@@ -22,9 +23,11 @@ const Catalog = () => {
       dispatch(setLoading(false))
       const { data: products } = await getData()
 
+      const sanitazedProducts = products.filter(product => isValidProduct(product))
+
       setTimeout(() =>{
         dispatch(setLoading(true))
-        dispatch(setProducts(products))
+        dispatch(setProducts(sanitazedProducts))
 
         setInitialized(true)
       }, 0)

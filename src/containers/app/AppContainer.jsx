@@ -9,7 +9,7 @@ const AppContainer = ({children, overlay}) => {
 
   useEffect(() => {
     body.style.overflowY = overlay ? 'hidden' : 'scroll'
-  }, [overlay])
+  }, [overlay, body])
   return (
     <div className={`app-container ${hasOverlay}`.trim()}>
       {children}
