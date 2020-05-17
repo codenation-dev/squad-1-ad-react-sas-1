@@ -8,7 +8,5 @@ import {productionActionTypes} from "../constants/store";
  */
 export const setProducts = (products) => ({
   type: productionActionTypes.SET_PRODUCTS,
-  payload:{
-    products: products
-  }
+  payload: products
 })

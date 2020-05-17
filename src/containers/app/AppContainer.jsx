@@ -8,12 +8,10 @@ const AppContainer = ({children, overlay}) => {
 
   const hasOverlay = overlay ? 'has--overlay' : ''
   return (
-    <Provider store={store}>
-      <div className={`app-container ${hasOverlay}`.trim()}>
-        {children}
-        <Footer />
-      </div>
-    </Provider>
+    <div className={`app-container ${hasOverlay}`.trim()}>
+      {children}
+      <Footer />
+    </div>
   )
 }
 

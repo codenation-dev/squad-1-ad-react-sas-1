@@ -1,8 +1,8 @@
 import React from "react";
-import CartItem from '../CartItem';
+import CartItem from '../../components/CartItem';
 import './Search.scss'
-import Cart from "../Cart";
-import Container from "../Container";
+import Cart from "../../components/Cart";
+import Container from "../../components/Container";
 
 const Search = ({itens, value, closeSearch, active}) => {
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -31,10 +31,9 @@ const Search = ({itens, value, closeSearch, active}) => {
           <ul className="search__content-full">
             {
               arr.map((item,idx) => (
-                <li className="search__content-item">
+                <li key={idx} className="search__content-item">
                   <CartItem
                     visibilityConfig={cardItemVisibilityConfig}
-                    key={idx}
                     title="Teste"
                     price="12"
                     size="M"
