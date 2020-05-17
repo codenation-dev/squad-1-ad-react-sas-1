@@ -9,7 +9,7 @@ const ProductCatalog = ({product, loading,onSizeSelected, initialSize, children}
   const {name, image, regular_price, actual_price, discount_percentage} = product;
   const hasDiscount = discount_percentage.toString().includes('%')
 
-  const { color_slug } = product
+  const { color_slug, code_color } = product
   const isLoading = loading ? 'is--loading' : ''
   const isSelected = (inputValue) => {
     return selected && selected.size === inputValue ? 'is--selected': ''
@@ -27,7 +27,7 @@ const ProductCatalog = ({product, loading,onSizeSelected, initialSize, children}
       : <div className={`product-catalog ${isLoading}`}>
         <div className="product-catalog__image-wrapper">
           { discount_percentage && <Badge text={discount_percentage}/> }
-          <img src={image} alt="produto"/>
+          <img src={image} loading="lazy" alt="produto"/>
         </div>
 
         <ProductInfo
@@ -37,20 +37,20 @@ const ProductCatalog = ({product, loading,onSizeSelected, initialSize, children}
           regularPrice={regular_price}
           discountedPrice={actual_price}/>
 
-        <div className="product-catalog__sizes-container">
-            {availableSizes.map(({size, sku}) => {
-              return (
-                <div key={size}>
-                  <input id={size} name={color_slug} onChange={() => setSelected({size, sku})} type="radio" />
-                  <label
-                    htmlFor={size}
-                    className={`product-catalog__size-item ${isSelected(size)}`}>
-                    {size}
-                  </label>
-                </div>
-                )
-            })}
-        </div>
+        <form className="product-catalog__sizes-container">
+          {availableSizes.map(({size, sku}) => {
+            return (
+              <div key={size}>
+                <input id={`${size}${code_color}`} name={`${color_slug}${code_color}`} onChange={() => setSelected({size, sku})} type="radio" />
+                <label
+                  htmlFor={`${size}${code_color}`}
+                  className={`product-catalog__size-item ${isSelected(size)}`}>
+                  {size}
+                </label>
+              </div>
+              )
+          })}
+        </form>
 
         {children(product,selected)}
       </div>
