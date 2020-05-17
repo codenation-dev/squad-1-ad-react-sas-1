@@ -1,17 +1,1 @@
 @import './scss/index.scss';
-
-.App {
-  text-align: center;
-}
-
-
-.container, .container-fluid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
-}
-
-.bg-green {
-  background-color: lightgreen
-}

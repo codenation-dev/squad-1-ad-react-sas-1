@@ -4,5 +4,5 @@
 
 // PRODUCT ACTIONS
 export const productionActionTypes = {
-  SET_PRODUCTS: 'SET_PRODUCTS'
+  SET_PRODUCTS: 'PRODUCTS_SET_PRODUCTS'
 };

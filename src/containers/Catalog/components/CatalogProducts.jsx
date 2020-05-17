@@ -25,7 +25,7 @@ const CatalogProducts = ({ items }) => {
 
   const fastSwitchToggleCart = async () => {
     dispatch(openCart())
-    await delay(1000000)
+    await delay(2000)
     dispatch(closeCart())
     return true
   }
