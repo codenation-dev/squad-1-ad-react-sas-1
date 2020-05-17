@@ -49,29 +49,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1095a91-7fd3-4450-bc87-5e3555122145" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CartFooter/CartFooter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartFooter/CartFooter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CartItem/CartItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartItem/CartItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cart/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/Cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductCatalog/ProductCatalog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCatalog/ProductCatalog.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProductCatalog/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCatalog/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/store/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/store/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/store/globals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/store/globals.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/store/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/store/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/store/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/store/search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Catalog/components/CatalogProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Catalog/components/CatalogProducts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ShoppingCart/ShoppingCart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ShoppingCart/ShoppingCart.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Catalog/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Catalog/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/app/AppContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/app/AppContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/app/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/app/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +159,7 @@
       <workItem from="1589230102279" duration="10279000" />
       <workItem from="1589636684001" duration="17650000" />
       <workItem from="1589726906860" duration="84000" />
-      <workItem from="1589727004531" duration="11654000" />
+      <workItem from="1589727004531" duration="16475000" />
     </task>
     <servers />
   </component>
@@ -246,9 +234,9 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="296" y="244" key="run.anything.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1589730028093" />
-    <state x="297" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1589741392947">
+    <state x="297" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1589745052107">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="297" y="230" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1589741392947" />
+    <state x="297" y="230" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1589745052107" />
   </component>
 </project>

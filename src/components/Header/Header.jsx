@@ -5,8 +5,17 @@ import {faSearch, faShoppingBag} from '@fortawesome/free-solid-svg-icons';
 import './Header.scss';
 import Container from "../Container/Container";
 import {Link} from 'react-router-dom';
+import {useSelector} from "react-redux";
 
-function Header({openShoppingCart, openSearch}) {
+const Header = ({openShoppingCart, openSearch}) => {
+
+  const { Cart: { items = [] }} = useSelector(state => state)
+
+  let outputBadge;
+  if(items.length){
+    outputBadge = <span className="bag-badget">{items.length}</span>
+  }
+
   return (
     <header className="main-header">
       <Container>
@@ -30,7 +39,7 @@ function Header({openShoppingCart, openSearch}) {
               icon={faShoppingBag}
               color="#000"
               size="lg"/>
-            <span className="bag-badget">90</span>
+            { outputBadge }
           </button>
         </div>
       </Container>
