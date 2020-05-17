@@ -1,15 +1,56 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import CartItem from '../../components/CartItem';
 import './Search.scss'
 import Cart from "../../components/Cart";
 import Container from "../../components/Container";
+import {useSelector} from "react-redux";
+import sanitazeProduct from "../../modules/products/sanitazeProductData";
+import {matchProduct} from "../../modules/products/match";
 
-const Search = ({itens, value, closeSearch, active}) => {
-  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const Search = ({closeSearch, active}) => {
+  const [search, setSearch] = useState('')
+  const { Products: { items } } = useSelector(state => state)
+  const isMatch = matchProduct(search)
+
+  const sanitazedProducts = items.map(product => {
+    return sanitazeProduct({
+      ...product,
+      selected: {}
+    })
+  }).filter(product => {
+    return search && isMatch(product)
+  })
+
   const cardItemVisibilityConfig = {
     removeButton: false,
     size: false,
     quantity: false,
+  }
+
+  let outputNumberOfItems;
+  let outputProducts;
+
+  if(!!search){
+    outputNumberOfItems = <div className="search__product-numbers">{sanitazedProducts.length} items</div>
+  }
+
+  if(search && sanitazedProducts.length){
+    outputProducts = <ul className="search__content-full">
+      { sanitazedProducts.map((product,idx) => (
+        <li key={idx} className="search__content-item">
+          <CartItem
+            visibilityConfig={cardItemVisibilityConfig}
+            product={product}
+          />
+        </li>
+      )) }
+    </ul>
+  } else {
+    outputProducts = <div className="search__content-empty">
+           <span>
+               Oquer voce procura ? 🧐
+           </span>
+    </div>
   }
 
   return (
@@ -19,34 +60,17 @@ const Search = ({itens, value, closeSearch, active}) => {
       active={active}
     >
       <Container className="search">
-
         <div className="search__input-container">
           <div className="form-field">
-            <input type="text"/>
+            <input type="text"
+                   placeholder='Ex: vestido'
+                   value={search} onChange={(e) => setSearch(e.target.value)}/>
           </div>
-          <div className="search__product-numbers">5 items</div>
+          { outputNumberOfItems }
         </div>
 
         <div className="search__content">
-          <ul className="search__content-full">
-            {
-              arr.map((item,idx) => (
-                <li key={idx} className="search__content-item">
-                  <CartItem
-                    visibilityConfig={cardItemVisibilityConfig}
-                    title="Teste"
-                    price="12"
-                    size="M"
-                  />
-                </li>
-              ))
-            }
-          </ul>
-          <div className="search__content-empty">
-           <span>
-               Seu carrinho está vazio :(
-           </span>
-          </div>
+          { outputProducts }
         </div>
       </Container>
     </Cart>
