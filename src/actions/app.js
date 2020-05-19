@@ -9,3 +9,13 @@ export const setLoading = (status) => ({
   type: globalActionApp.LOADING,
   payload: status,
 })
+
+/**
+ *
+ * @param {Boolean}status
+ * @return {{payload: *, type: string}}
+ */
+export const setInitialized = (status) => ({
+  type: globalActionApp.SET_INITIALIZED,
+  payload: status
+})

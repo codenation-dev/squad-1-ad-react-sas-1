@@ -1,25 +1,42 @@
 import DressImage from "../../assets/img/product.jpg";
 import './style.scss';
 import React from "react";
+import ProductInfo from "../ProductInfo";
+import Sizes from "../Sizes";
 
-const ProductFullContent = () => {
+const ProductFullContent = ({ product }) => {
+  const {
+    name,
+    regular_price,
+    discount_percentage,
+    actual_price,
+    sizes,
+    image
+  } = product
+  const hasDiscount = discount_percentage.toString().includes('%')
+
+  const handleSelected = (size) => {
+    console.log({ size })
+  }
+
   return (
     <div className="product-full">
-      <div className="product-image">
-        <img src={DressImage} alt="white-dress"/>
+      <div className="product-full__image-container">
+        <img src={image} alt="white-dress"/>
       </div>
-      <div className="product-description">
-        <h1 className="product-description__type">VESTIDO TRANSPASSE BOW</h1>
-        <div className="price_box">
-          <p className="product-description__price">R$ 199,90</p>
-          <p className="product-description__payment-description">em até 3x de R$ 66,63</p>
-        </div>
-        <p className="product-description__size">Escolha o tamanho</p>
-        <button className="button_size">P</button>
-        <button className="button_size">M</button>
-        <button className="button_size">G</button>
+      <div className="product-full__description">
+        <ProductInfo
+          name={name}
+          discount={hasDiscount}
+          discountedPrice={actual_price}
+          regularPrice={regular_price}
+        />
 
-        <button className="fs-button button_buy" type="button">Adicionar à Sacola</button>
+        <p className="product-full__chose-size">Escolha o tamanho</p>
+
+        <Sizes sizes={sizes} onSelected={size => handleSelected(size)}/>
+
+        <button className="fs-button product-full__button_buy" type="button">Adicionar à Sacola</button>
       </div>
     </div>
   )

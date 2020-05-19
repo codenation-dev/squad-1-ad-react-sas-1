@@ -18,6 +18,7 @@
     .has-discount & {
       &.is-regular {
         text-decoration: line-through;
+        margin-left: 0;
         color: #999595e1;
       }
 

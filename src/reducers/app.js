@@ -4,6 +4,7 @@ import {globalActionApp} from "../constants/store";
 const INITIAL_STATE = {
   version: packageJson.version,
   loading: false,
+  initialized: false,
 };
 
 export const appReducer = (state = INITIAL_STATE, action) => {
@@ -13,6 +14,12 @@ export const appReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         loading: payload
+      }
+
+    case globalActionApp.SET_INITIALIZED:
+      return {
+        ...state,
+        initialized: payload
       }
 
     default:
