@@ -2,20 +2,35 @@ import React, {useState} from "react";
 import Badge from "../Badge";
 import ProductInfo from './../ProductInfo'
 import "./style.scss";
+import Sizes from "../Sizes";
 
-const ProductCatalog = ({product, loading, children, onClickImage}) => {
+const ProductCatalog = ({product, loading, onClickImage, onAddCart}) => {
 
-  const [selected, setSelected] = useState({ size: null, sku: null })
+  const [selected, setSelected] = useState(null)
+  const [message, setMessage] = useState('')
   const {name, image, regular_price, actual_price, discount_percentage} = product;
   const hasDiscount = discount_percentage.toString().includes('%')
 
-  const { color_slug, code_color } = product
   const isLoading = loading ? 'is--loading' : ''
-  const isSelected = (inputValue) => {
-    return selected && selected.size === inputValue ? 'is--selected' : ''
-  }
 
   const availableSizes = product.sizes.filter(({available}) => available)
+
+  const handleClick = () => {
+    if(selected){
+      onAddCart({
+        ...product,
+        selected,
+      })
+      setSelected(null)
+    } else {
+      setMessage('Por favor selecione um tamanho')
+    }
+  }
+
+  const handleSelected = (size) => {
+    setSelected(size)
+    setMessage('')
+  }
 
   return (
     isLoading
@@ -24,7 +39,7 @@ const ProductCatalog = ({product, loading, children, onClickImage}) => {
         <div className="product-catalog__image-wrapper">
           { discount_percentage && <Badge text={discount_percentage}/> }
           <img
-            onClick={(e) => onClickImage(e)}
+            onClick={() => onClickImage(product)}
             src={image} loading="lazy" alt="produto"/>
         </div>
 
@@ -35,22 +50,16 @@ const ProductCatalog = ({product, loading, children, onClickImage}) => {
           regularPrice={regular_price}
           discountedPrice={actual_price}/>
 
-        <form className="product-catalog__sizes-container">
-          {availableSizes.map(({size, sku}) => {
-            return (
-              <div key={size}>
-                <input id={`${size}${code_color}`} name={`${color_slug}${code_color}`} onChange={() => setSelected({size, sku})} type="radio" />
-                <label
-                  htmlFor={`${size}${code_color}`}
-                  className={`product-catalog__size-item ${isSelected(size)}`}>
-                  {size}
-                </label>
-              </div>
-              )
-          })}
-        </form>
+        <Sizes
+          className="product-catalog__sizes-container"
+          sizes={availableSizes}
+          onSelected={size => handleSelected(size)}/>
 
-        {children(product,selected)}
+        <button
+          onClick={() => handleClick()}
+          className="fs-button catalog__product-button">Adicionar ao carrinho</button>
+
+        <div className="product-catalog__validation-message">{message}</div>
       </div>
   )
 }
@@ -64,7 +73,7 @@ ProductCatalog.defaultProps = {
     discount_percentage: '',
     sizes: []
   },
-  onSizeSelected: () => { alert('no fn on prop {onSizeSelected}')},
+  onAddCart: () => { },
   children: () => {}
 }
 

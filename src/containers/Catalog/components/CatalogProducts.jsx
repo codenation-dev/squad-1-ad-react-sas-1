@@ -6,21 +6,16 @@ import {toastyInfo} from "../../../modules/toasty/toastyTypes";
 import sanitazeProduct from "../../../modules/products/sanitazeProductData";
 import {useDispatch} from "react-redux";
 import {delay} from "../../../modules/time";
+import slugfy from "../../../modules/string/slugfy";
+import {setPageProduct} from "../../../actions/products";
 
 
 const CatalogProducts = ({ items }) => {
   const dispatch = useDispatch()
   const history = useHistory()
 
-  const addItemToCart = (products, selected) => {
-
-    if(!selected) return alert('porfavor favor selecione um produto')
-    const formatedProduct = {
-      ...products,
-      selected
-    }
-
-    dispatch(addCartItem(formatedProduct))
+  const addItemToCart = (selectedProduct) => {
+    dispatch(addCartItem(selectedProduct))
     fastSwitchToggleCart()
   }
 
@@ -31,8 +26,14 @@ const CatalogProducts = ({ items }) => {
     return true
   }
 
-  function handleClick() {
-    history.push('product/example')
+  function handleClick(product){
+    const {
+      name,
+      color_slug
+    } = product
+
+    dispatch(setPageProduct(product))
+    history.push(`product/${slugfy(name)}?color=${color_slug}`)
   }
 
   return (items.map((product, idx) => (
@@ -41,11 +42,8 @@ const CatalogProducts = ({ items }) => {
         key={product.images}
         onClickImage={(product) => handleClick(product)}
         product={product}
-      >{(productRef, selected) => {
-        return <button
-          onClick={() => addItemToCart(productRef, selected)}
-          className="fs-button catalog__product-button">Adicionar ao carrinho</button>
-      }}</ProductCatalog>
+        onAddCart={(product) => addItemToCart(product)}
+      />
     </div>
   )))
 }

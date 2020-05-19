@@ -81,33 +81,18 @@
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 5px;
-    input{
-      width: 0;
-      height: 0;
-      padding: 0;
-      margin: 0;
-      opacity: 0;
+    flex-flow: row wrap;
+
+    .button_size{
+      margin: 0 20px;
     }
   }
 
-  &__size-item{
-    width: 28px;
-    height: 28px;
-    display: inline-flex;
+  &__validation-message{
+    text-decoration: underline;
     text-align: center;
-    background: #212429;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    box-shadow: 0 0 0 3px transparent, 0 0 0 6px transparent;
-    padding: 2px;
-    font-size: 14px;
-    margin: 0 10px;
-    transition: box-shadow 225ms ease-in-out;
-
-    &.is--selected{
-      box-shadow: 0 0 0 3px #fff, 0 0 0 6px #dab931;
-    }
+    color: #21242a;
+    font-weight: bold;
+    margin-top: 5px;
   }
 }

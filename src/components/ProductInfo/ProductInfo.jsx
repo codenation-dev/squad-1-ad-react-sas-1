@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss'
 
-const ProductInfo = ({ name, regularPrice, discountedPrice, center, discount})  => {
+const ProductInfo = ({ name, regularPrice, discountedPrice, center, discount })  => {
   const centerClass = center ? 'center' : ''
   const discountClass = discount ? 'has-discount': ''
 

@@ -1,12 +1,23 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 
 .shopping-cart {
+
+  &__wrapper{
+    .minicart__content{
+      position: relative;
+      height: calc(100vh - 64px);
+      max-width: initial;
+    }
+  }
+
   &__content {
-    min-height: calc(100% - 72px - 4rem);
+    height: 100%;
+    width: 100%;
+    max-height: calc(100% - 72px);
     text-align: center;
     padding: 0 1rem;
     overflow-y: scroll;
-    background-color: rgb(249, 249, 249);
+    background-color: #f9f9f9;
   }
 
   &__content-full {
@@ -32,6 +43,12 @@
   &__content-item{
     padding: 10px 0;
     border-bottom: 1px solid #ccc;
+  }
+
+  &__footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
   }
 }
 

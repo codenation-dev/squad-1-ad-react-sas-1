@@ -1,59 +1,38 @@
-.product-image {
-  img{
+.product-full{
+  display: flex;
+  flex-flow: row wrap;
+
+  &__image-container{
+    img{
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  &__chose-size{
+    margin-top: 10px;
+    color: #a7a7a7;
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__sizes{
+    .button_size{
+      &:first-child{
+        margin-left: 0;
+      }
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__button_buy{
+    margin-top: 10px;
     width: 100%;
   }
 }
 
-.product-description {
-
-  .product-description__type {
-    font-weight: bolder;
-    font-size: 1.2em;
-    color: #212429;
-  }
-}
-
-.price_box {
-  display: flex;
-  margin-top: -15px;
-}
-
-.product-description__price {
-  font-weight: bold;
-  font-size: 0.8em;
-}
-
-.product-description__payment-description {
-  color: #b1b0b0;
-  font-size: 0.8em;
-  justify-content: flex-end;
-  margin-left: 10px;
-  font-weight: bold;
-}
-
-.product-description__size {
-  color: #b1b0b0;
-  font-size: 0.78rem;
-  display: block;
-  margin-top: -5px;
-  margin-bottom: 5px;
-}
-
-// styling buttons
-
-.button_size {
-  width: 25px;
-  height: 28px;
-  padding: 0;
-  font-weight: bold;
-  text-align: center;
-  font-size: 12px;
-  background-color: #F9F9F9;
-  border: 1px solid #ccc8c8;
-  border-radius: 3px;
-  cursor: pointer;
-  outline-color: #212429;
-  margin: 0 2px;
-}
 
 
