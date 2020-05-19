@@ -1,7 +1,7 @@
 import React from "react"
 import './CartItem.scss';
 
-const CartItem = ({ product, totalItems, visibilityConfig, onRemove, onAddOne, onRemoveOne }) => {
+const CartItem = ({ product, totalItems, visibilityConfig, onRemove, onAddOne, onRemoveOne, onClick }) => {
   const  {
     name,
     size,
@@ -16,9 +16,9 @@ const CartItem = ({ product, totalItems, visibilityConfig, onRemove, onAddOne, o
   } = visibilityConfig
 
   return (
-      <div className="cart-item">
+      <div className="cart-item" onClick={() => onClick(product)} >
         <div className="cart-item__media">
-          <img src={image} alt="foto em miniatura do produto escolhido"/>
+          <img src={image} />
           { removeButtonVisibility &&
             <button type="button"
               onClick={() => onRemove(product)}
@@ -71,7 +71,8 @@ CartItem.defaultProps = {
   },
   onRemove: () => { alert('no fn on prop {onRemove}')},
   onAddOne: () => { alert('no fn on prop {onAddOne}')},
-  onRemoveOne: () => { alert('no fn on prop {onRemoveOne}')}
+  onRemoveOne: () => { alert('no fn on prop {onRemoveOne}')},
+  onClick: () => {}
 }
 
 export default CartItem;
