@@ -1,40 +1,15 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import "./style.scss";
 import {useSelector} from "react-redux";
-import {useDispatch} from "react-redux";
-import {setLoading} from "../../actions/app";
-import {setProducts} from "../../actions/products";
-import getData from "../../services";
 import Container from "../../components/Container";
 import CatalogLoading from "./components/CatalogLoading";
 import CatalogProducts from "./components/CatalogProducts";
-import {isValidProduct} from "../../modules/products/validations";
 
 const Catalog = () => {
-  const [initialized, setInitialized] = useState(false)
   const {
-    Info: { loading },
-    Products: { items }
+    Info: { loading, initialized },
+    Products: { items },
   } = useSelector(state => state)
-  const dispatch = useDispatch()
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      dispatch(setLoading(false))
-      const { data: products } = await getData()
-
-      const sanitazedProducts = products.filter(product => isValidProduct(product))
-
-      setTimeout(() =>{
-        dispatch(setLoading(true))
-        dispatch(setProducts(sanitazedProducts))
-
-        setInitialized(true)
-      }, 0)
-    };
-
-    fetchProducts()
-  },[])
 
   const isInitialized = !initialized && !loading
 

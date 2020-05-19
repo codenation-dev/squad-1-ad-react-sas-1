@@ -24,7 +24,7 @@ const ProductCatalog = ({product, loading, children, onClickImage}) => {
         <div className="product-catalog__image-wrapper">
           { discount_percentage && <Badge text={discount_percentage}/> }
           <img
-            onClick={(e) => onClickImage(e)}
+            onClick={() => onClickImage(product)}
             src={image} loading="lazy" alt="produto"/>
         </div>
 

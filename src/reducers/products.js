@@ -2,7 +2,8 @@ import { productionActionTypes } from '../constants/store';
 
 const INITIAL_STATE = {
   items: [
-  ]
+  ],
+  product: null
 };
 
 export const productsReducer = (state = INITIAL_STATE, action) => {
@@ -10,10 +11,15 @@ export const productsReducer = (state = INITIAL_STATE, action) => {
 
   switch (type) {
     case productionActionTypes.SET_PRODUCTS:
-
       return {
         ...state,
         items: [...payload]
+      }
+
+    case productionActionTypes.SET_PAGE_PRODUCT:
+      return {
+        ...state,
+        product: payload
       }
 
     default:

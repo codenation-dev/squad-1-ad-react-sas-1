@@ -6,6 +6,8 @@ import {toastyInfo} from "../../../modules/toasty/toastyTypes";
 import sanitazeProduct from "../../../modules/products/sanitazeProductData";
 import {useDispatch} from "react-redux";
 import {delay} from "../../../modules/time";
+import slugfy from "../../../modules/string/slugfy";
+import {setPageProduct} from "../../../actions/products";
 
 
 const CatalogProducts = ({ items }) => {
@@ -31,8 +33,14 @@ const CatalogProducts = ({ items }) => {
     return true
   }
 
-  function handleClick() {
-    history.push('product/example')
+  function handleClick(product){
+    const {
+      name,
+      color_slug
+    } = product
+
+    dispatch(setPageProduct(product))
+    history.push(`product/${slugfy(name)}?color=${color_slug}`)
   }
 
   return (items.map((product, idx) => (

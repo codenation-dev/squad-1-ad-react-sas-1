@@ -63,6 +63,7 @@
     &:last-of-type {
       margin: 0;
     }
+
   }
 
   &__icons-container{
@@ -70,6 +71,10 @@
     justify-content: center;
     display: flex;
     align-items: center;
+
+    @media (min-width: 768px) {
+      justify-content: flex-end;
+    }
   }
 
   .icon__bag {
