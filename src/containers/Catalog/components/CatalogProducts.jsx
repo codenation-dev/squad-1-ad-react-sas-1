@@ -14,15 +14,8 @@ const CatalogProducts = ({ items }) => {
   const dispatch = useDispatch()
   const history = useHistory()
 
-  const addItemToCart = (products, selected) => {
-
-    if(!selected) return alert('porfavor favor selecione um produto')
-    const formatedProduct = {
-      ...products,
-      selected
-    }
-
-    dispatch(addCartItem(formatedProduct))
+  const addItemToCart = (selectedProduct) => {
+    dispatch(addCartItem(selectedProduct))
     fastSwitchToggleCart()
   }
 
@@ -49,11 +42,8 @@ const CatalogProducts = ({ items }) => {
         key={product.images}
         onClickImage={(product) => handleClick(product)}
         product={product}
-      >{(productRef, selected) => {
-        return <button
-          onClick={() => addItemToCart(productRef, selected)}
-          className="fs-button catalog__product-button">Adicionar ao carrinho</button>
-      }}</ProductCatalog>
+        onAddCart={(product) => addItemToCart(product)}
+      />
     </div>
   )))
 }

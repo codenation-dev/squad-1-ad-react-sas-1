@@ -6,6 +6,7 @@ import {setLoading, setInitialized} from "../../actions/app";
 import {setProducts} from "../../actions/products";
 import getData from "../../services";
 import {delay} from "../../modules/time";
+import {isValidProduct} from "../../modules/products/validations";
 
 const AppContainer = ({children, overlay}) => {
 
@@ -18,11 +19,12 @@ const AppContainer = ({children, overlay}) => {
     const fetchProducts = async () => {
       dispatch(setLoading(false))
       const { data: products } = await getData()
+      const sanitazedProducts = products.filter(product => isValidProduct(product))
 
       await delay()
 
       dispatch(setLoading(true))
-      dispatch(setProducts(products))
+      dispatch(setProducts(sanitazedProducts))
       dispatch(setInitialized(true))
 
       setInitialized(true)

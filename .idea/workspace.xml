@@ -50,26 +50,24 @@
   <component name="ChangeListManager">
     <list default="true" id="b1095a91-7fd3-4450-bc87-5e3555122145" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cart/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CartFooter/CartFooter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartFooter/CartFooter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Container/Container.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Container/Container.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Container/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Container/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProductCatalog/ProductCatalog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCatalog/ProductCatalog.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductFullContent/ProductFullContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductFullContent/ProductFullContent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductCatalog/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCatalog/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProductFullContent/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductFullContent/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductInfo/ProductInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductInfo/ProductInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductInfo/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductInfo/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/store/globals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/store/globals.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/store/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/store/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Catalog/Catalog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Catalog/Catalog.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sizes/Sizes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sizes/Sizes.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Catalog/components/CatalogProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Catalog/components/CatalogProducts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/ProductContainer/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ProductContainer/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/ShoppingCart/ShoppingCart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ShoppingCart/ShoppingCart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/ShoppingCart/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ShoppingCart/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/app/AppContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/app/AppContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/app/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/app/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/redux/cart/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/redux/cart/helpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Product/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Product/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/products.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,22 +214,22 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="427" y="261" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1589230361952" />
-    <state width="1385" height="269" key="GridCell.Tab.0.bottom" timestamp="1589863265043">
+    <state width="1479" height="269" key="GridCell.Tab.0.bottom" timestamp="1589870900656">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1385" height="269" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1589863265043" />
-    <state width="1385" height="269" key="GridCell.Tab.0.center" timestamp="1589863265043">
+    <state width="1479" height="269" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1589870900656" />
+    <state width="1479" height="269" key="GridCell.Tab.0.center" timestamp="1589870900656">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1385" height="269" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1589863265043" />
-    <state width="1385" height="269" key="GridCell.Tab.0.left" timestamp="1589863265043">
+    <state width="1479" height="269" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1589870900656" />
+    <state width="1479" height="269" key="GridCell.Tab.0.left" timestamp="1589870900656">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1385" height="269" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1589863265043" />
-    <state width="1385" height="269" key="GridCell.Tab.0.right" timestamp="1589863265043">
+    <state width="1479" height="269" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1589870900656" />
+    <state width="1479" height="269" key="GridCell.Tab.0.right" timestamp="1589870900656">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1385" height="269" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1589863265043" />
+    <state width="1479" height="269" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1589870900656" />
     <state x="503" y="225" width="998" height="708" key="SettingsEditor" timestamp="1589727463744">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
