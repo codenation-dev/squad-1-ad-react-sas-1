@@ -2,9 +2,9 @@ import React from 'react'
 import './style.scss'
 import {floatToCurrency} from "../../modules/number/formaters";
 
-const CartFooter = ({ value }) => {
+const CartFooter = ({ value, className }) => {
   return (
-    <div className="cart-footer">
+    <div className={`cart-footer ${className}`.trim()}>
       <div className="cart-footer__container">
          <span className="cart-footer__with-currency">
              Subtotal {floatToCurrency(value)}
