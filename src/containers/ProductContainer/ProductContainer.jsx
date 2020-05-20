@@ -6,6 +6,7 @@ import Loader from "../../components/Loader";
 
 import './style.scss'
 import ProductFullContent from "../../components/ProductFullContent";
+import ProductCatalog from "../../components/ProductCatalog";
 
 const ProductContainer = () => {
   const location = useLocation()
@@ -28,7 +29,7 @@ const ProductContainer = () => {
   }
 
   if(selectedProduct){
-    output = <ProductFullContent product={selectedProduct} />
+    output =  <ProductCatalog onClickImage={() => {}} product={selectedProduct} />
   } else {
     output = <div className="product-page__loader">
       <Loader />

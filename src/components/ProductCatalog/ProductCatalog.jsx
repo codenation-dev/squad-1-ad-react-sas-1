@@ -3,11 +3,15 @@ import Badge from "../Badge";
 import ProductInfo from './../ProductInfo'
 import "./style.scss";
 import Sizes from "../Sizes";
+import {addCartItem, closeCart, openCart} from "../../actions/cart";
+import {delay} from "../../modules/time";
+import {useDispatch} from "react-redux";
 
-const ProductCatalog = ({product, loading, onClickImage, onAddCart}) => {
+const ProductCatalog = ({product, loading, onClickImage}) => {
 
   const [selected, setSelected] = useState(null)
   const [message, setMessage] = useState('')
+  const dispatch = useDispatch()
   const {name, image, regular_price, actual_price, discount_percentage} = product;
   const hasDiscount = discount_percentage.toString().includes('%')
 
@@ -15,9 +19,21 @@ const ProductCatalog = ({product, loading, onClickImage, onAddCart}) => {
 
   const availableSizes = product.sizes.filter(({available}) => available)
 
+  const addItemToCart = (selectedProduct) => {
+    dispatch(addCartItem(selectedProduct))
+    fastSwitchToggleCart()
+  }
+
+  const fastSwitchToggleCart = async () => {
+    dispatch(openCart())
+    await delay(2000)
+    dispatch(closeCart())
+    return true
+  }
+
   const handleClick = () => {
     if(selected){
-      onAddCart({
+      addItemToCart({
         ...product,
         selected,
       })

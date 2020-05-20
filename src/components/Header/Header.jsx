@@ -9,12 +9,24 @@ import {useSelector} from "react-redux";
 
 const Header = ({openShoppingCart, openSearch}) => {
 
-  const { Cart: { items = [] }} = useSelector(state => state)
+  const {
+    Cart: { items = [] },
+    Products: { items: productItems },
+  } = useSelector(state => state)
 
   let outputBadge;
   if(items.length){
     outputBadge = <span className="bag-badget">{items.length}</span>
   }
+
+  console.log(productItems)
+  // producar a respeito da funcao reduce, para pegar todos as cores da lista e colocar em um array
+  // tirar as cores duplicadas
+  // listar os botoes com base nas cores
+  // ao clicar em um botao setar a cor para um estado local (vide useState)
+  // crirar uma variavel que irá receber a nova lista
+  // setar ass nova lista no redux
+  // actions/products => setProducts (aqui tem a action para setar no redux)
 
   return (
     <header className="main-header">
@@ -41,6 +53,17 @@ const Header = ({openShoppingCart, openSearch}) => {
               size="lg"/>
             { outputBadge }
           </button>
+        </div>
+      </Container>
+      <Container>
+        <div style={{ width: '100%'}}>
+          <ul style={{ width: '100%', display: 'flex', justifyContent: 'space-between'}}>
+            <li><button>Azul</button></li>
+            <li><button>PRETO</button></li>
+            <li><button>AMARELO</button></li>
+            <li><button>ROSA</button></li>
+            <li><button>VERDE</button></li>
+          </ul>
         </div>
       </Container>
     </header>

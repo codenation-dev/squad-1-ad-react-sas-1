@@ -14,18 +14,6 @@ const CatalogProducts = ({ items }) => {
   const dispatch = useDispatch()
   const history = useHistory()
 
-  const addItemToCart = (selectedProduct) => {
-    dispatch(addCartItem(selectedProduct))
-    fastSwitchToggleCart()
-  }
-
-  const fastSwitchToggleCart = async () => {
-    dispatch(openCart())
-    await delay(2000)
-    dispatch(closeCart())
-    return true
-  }
-
   function handleClick(product){
     const {
       name,
@@ -42,7 +30,6 @@ const CatalogProducts = ({ items }) => {
         key={product.images}
         onClickImage={(product) => handleClick(product)}
         product={product}
-        onAddCart={(product) => addItemToCart(product)}
       />
     </div>
   )))
