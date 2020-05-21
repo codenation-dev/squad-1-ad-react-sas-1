@@ -1,6 +1,7 @@
 .search {
   background-color: #f9f9f9;
   min-height: calc(100vh - 64px);
+  padding: 0 15px !important;
 
   &__content-full{
     display: flex;
