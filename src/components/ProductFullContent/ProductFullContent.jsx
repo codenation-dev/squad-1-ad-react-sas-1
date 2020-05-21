@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import ProductInfo from "../ProductInfo";
 import Sizes from "../Sizes";
+import Facebook from '../../assets/img/facebook-f-brands.svg';
+import Instagram from '../../assets/img/instagram-brands.svg';
+import Twitter from '../../assets/img/twitter-brands.svg';
+// import {addCartItem, closeCart, openCart} from '../../actions/cart.js';
+// import {useDispatch} from "react-redux";
+// import {delay} from '../../modules/time';
 import './style.scss';
 
-const ProductFullContent = ({ product }) => {
+const ProductFullContent = ({ product, onAddCart }) => {
+  const [selected, setSelected] = useState(null);
+  const [message, setMessage] = useState('');
+
   const {
     name,
     regular_price,
@@ -12,11 +21,8 @@ const ProductFullContent = ({ product }) => {
     sizes,
     image
   } = product
-  const hasDiscount = discount_percentage.toString().includes('%')
 
-  const handleSelected = (size) => {
-    console.log({ size })
-  }
+  const hasDiscount = discount_percentage.toString().includes('%')
 
   const toCapitalize = (text) => {
     const word = text.toLowerCase().split(" ");
@@ -25,6 +31,23 @@ const ProductFullContent = ({ product }) => {
       word[a] = w[0].toUpperCase() + w.slice(1)
     }
     return word.join(" ");
+  }
+
+  const handleClick = () => {
+    if(selected) {
+      onAddCart({
+        ...product,
+        selected,
+      })
+      setSelected(null)
+    } else {
+      setMessage('Por favor selecione um tamanho')
+    }
+  }
+
+  const handleSelected = (size) => {
+    setSelected(size)
+    setMessage('')
   }
 
   return (
@@ -44,7 +67,14 @@ const ProductFullContent = ({ product }) => {
 
         <Sizes sizes={sizes} onSelected={size => handleSelected(size)}/>
 
-        <button className="fs-button product-full__button_buy" type="button">Adicionar à Sacola</button>
+        <button
+          className="fs-button product-full__button_buy"
+          onClick={() => handleClick()}
+        >
+        Adicionar à Sacola
+        </button>
+
+        <div className="product-catalog__validation-message">{message}</div>
         <p className="product-full__aditional-description-heading">DETALHES</p>
         <span className="product-full__aditional-description">
         {toCapitalize(name)} vai em breve se tornar favorito em seu guarda-roupas.
@@ -53,9 +83,16 @@ const ProductFullContent = ({ product }) => {
         Além de tudo isso, oferecemos um preço justo para que você tenha os  melhores
         produtos do mercado disponíveis a qualquer momento.
         </span>
+        <img className="product-catalog__social-media" src={Facebook} alt="facebook"/>
+        <img className="product-catalog__social-media" src={Instagram} alt="instagram"/>
+        <img className="product-catalog__social-media" src={Twitter} alt="twitter"/>
       </div>
     </div>
   )
+}
+
+ProductFullContent.defaultProps = {
+  onAddCart: () => { },
 }
 
 export default ProductFullContent
