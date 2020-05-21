@@ -1,20 +1,30 @@
 import React from 'react'
+import {useDispatch} from "react-redux";
 import './style.scss'
 import {floatToCurrency} from "../../modules/number/formaters";
+import { closeCart } from '../../actions/cart';
+import { Link } from 'react-router-dom';
 
-const CartFooter = ({ value }) => {
+const CartFooter = ({ value, className }) => {
+  const dispatch = useDispatch()
+
   return (
-    <div className="cart-footer">
-      <div className="cart-footer__container">
-         <span className="cart-footer__with-currency">
-             Subtotal {floatToCurrency(value)}
-         </span>
-        <a href="/#">
-           <span className="cart-footer__empty">
-               Continuar comprando
-           </span>
-        </a>
-      </div>
+    <div className={`cart-footer ${className}`.trim()}>
+      <p className="cart-footer__subtotal">
+        Subtotal {floatToCurrency(value)}
+      </p>
+      <Link to="/success-purchases" onClick={() => dispatch(closeCart())}>
+        <div className="cart-footer__container">
+          <span className="cart-footer__with-currency">
+              Comprar
+          </span>
+          <a href="/#">
+            <span className="cart-footer__empty">
+                Continuar comprando
+            </span>
+          </a>
+        </div>
+      </Link>
     </div>
   )
 }

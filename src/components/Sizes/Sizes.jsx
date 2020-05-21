@@ -2,24 +2,24 @@ import React, {useState} from "react";
 
 import './style.scss'
 
-const Sizes = ({ sizes, onSelected }) => {
+const Sizes = ({ className, sizes, onSelected }) => {
   const [selected,setSelected] = useState(null)
 
-  const handleClick = (size) => {
-    const newSelected = size === selected ? null : size
+  const handleClick = (el) => {
+    const newSelected = selected && el.size === selected['size'] ? null : el
     onSelected(newSelected)
     setSelected(newSelected)
   }
 
   return (
-    <div className="product-full__sizes">
-      { sizes.map(({ size }) => (
+    <div className={`product-full__sizes ${className}`.trim()}>
+      { sizes.map((el) => (
         <button
-          key={size}
-          onClick={() => handleClick(size)}
+          key={el.size}
+          onClick={() => handleClick(el)}
           className={`button_size ${
-            size === selected ? 'is--selected': ''
-          }`}>{size}</button>)
+            selected && el.size === selected['size'] ? 'is--selected': ''
+          }`.trim()}>{el.size}</button>)
       )}
     </div>
   )

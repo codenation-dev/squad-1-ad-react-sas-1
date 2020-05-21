@@ -68,11 +68,12 @@ const ShoppingCart = ({closeShoppingCart, active}) => {
   }
 
   if(items.length){
-    outputCartFooter = <CartFooter value={totalCartPrice}/>
+    outputCartFooter = <CartFooter className="shopping-cart__footer" value={totalCartPrice}/>
   }
 
   return (
     <Cart
+      className="shopping-cart__wrapper"
       onClose={closeShoppingCart}
       title={`sacola (${cartItems.length})`}
       active={active}

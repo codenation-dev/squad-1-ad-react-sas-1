@@ -12,6 +12,8 @@ import {useDispatch, useSelector} from "react-redux";
 import Drawers from "../containers/Drawers/Drawers";
 import {openCart} from "../actions/cart";
 import {openSearch} from "../actions/search";
+import {openFavorites} from "../actions/favorite";
+import SuccessPurchases from "../pages/SuccessPurchases";
 
 export default function App() {
   const hasOverlay = useSelector(state => {
@@ -34,6 +36,7 @@ export default function App() {
         <Header
           openShoppingCart={() => dispatch(openCart())}
           openSearch={() => dispatch(openSearch())}
+          openFavorites={() => dispatch(openFavorites())}
         />
 
         <Switch>
@@ -42,6 +45,9 @@ export default function App() {
           </Route>
           <Route path="/product/:product">
             <Product/>
+          </Route>
+          <Route path="/success-purchases">
+            <SuccessPurchases/>
           </Route>
         </Switch>
       </AppContainer>
