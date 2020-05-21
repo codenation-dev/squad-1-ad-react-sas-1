@@ -4,14 +4,15 @@ import Sizes from "../Sizes";
 import Facebook from '../../assets/img/facebook-f-brands.svg';
 import Instagram from '../../assets/img/instagram-brands.svg';
 import Twitter from '../../assets/img/twitter-brands.svg';
-// import {addCartItem, closeCart, openCart} from '../../actions/cart.js';
-// import {useDispatch} from "react-redux";
-// import {delay} from '../../modules/time';
+import {addCartItem, closeCart, openCart} from '../../actions/cart.js';
+import {useDispatch} from "react-redux";
+import {delay} from '../../modules/time';
 import './style.scss';
 
-const ProductFullContent = ({ product, onAddCart }) => {
+const ProductFullContent = ({ product }) => {
   const [selected, setSelected] = useState(null);
   const [message, setMessage] = useState('');
+  const dispatch = useDispatch();
 
   const {
     name,
@@ -33,9 +34,14 @@ const ProductFullContent = ({ product, onAddCart }) => {
     return word.join(" ");
   }
 
+  const addItemToCart = (selectedProduct) => {
+    dispatch(addCartItem(selectedProduct))
+    fastSwitchToggleCart()
+  }
+
   const handleClick = () => {
     if(selected) {
-      onAddCart({
+      addItemToCart({
         ...product,
         selected,
       })
@@ -48,6 +54,13 @@ const ProductFullContent = ({ product, onAddCart }) => {
   const handleSelected = (size) => {
     setSelected(size)
     setMessage('')
+  }
+
+  const fastSwitchToggleCart = async () => {
+    dispatch(openCart())
+    await delay(2000)
+    dispatch(closeCart())
+    return true
   }
 
   return (
