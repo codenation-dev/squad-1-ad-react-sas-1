@@ -1,7 +1,7 @@
 @import '../../scss/helpers';
 
 .app-container {
-  padding-top: 100px;
+  // padding-top: 100px;
 
   &.has--overlay {
     @include window-withou-scroll();
