@@ -1,7 +1,7 @@
 # BARRY&BERRY 🛍
 
 
-<blockquote><p align="center"> O site Barry&Berry foi criado para o projeto final do Aceleradev - React "</blockquote>
+<blockquote><p align="center"> " O site Barry&Berry foi criado para o projeto final do Aceleradev - React "</blockquote>
 
 ---------------------------
 <p align="center">
