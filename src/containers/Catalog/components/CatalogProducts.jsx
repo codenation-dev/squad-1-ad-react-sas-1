@@ -2,8 +2,6 @@ import ProductCatalog from "../../../components/ProductCatalog";
 import React from "react";
 import { useHistory } from "react-router-dom";
 import {addCartItem, closeCart, openCart} from '../../../actions/cart'
-import {toastyInfo} from "../../../modules/toasty/toastyTypes";
-import sanitazeProduct from "../../../modules/products/sanitazeProductData";
 import {useDispatch} from "react-redux";
 import {delay} from "../../../modules/time";
 import slugfy from "../../../modules/string/slugfy";
@@ -21,7 +19,7 @@ const CatalogProducts = ({ items }) => {
 
   const fastSwitchToggleCart = async () => {
     dispatch(openCart())
-    await delay(2000)
+    await delay(1500)
     dispatch(closeCart())
     return true
   }

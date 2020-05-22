@@ -1,6 +1,5 @@
 import {cartActionApp} from "../constants/store";
 
-// cartActionApp,
 /**
  *
  * @param {Object} product

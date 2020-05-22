@@ -7,7 +7,7 @@ import Container from "../Container/Container";
 import {Link} from 'react-router-dom';
 import {useSelector} from "react-redux";
 
-const Header = ({openShoppingCart, openSearch}) => {
+const Header = ({openShoppingCart, openSearch }) => {
 
   const { Cart: { items = [] }} = useSelector(state => state)
 
@@ -25,6 +25,7 @@ const Header = ({openShoppingCart, openSearch}) => {
         <div className="main-header__icons-container">
           <span className="main-header__subtitle">CONTATOS</span>
           <span className="main-header__subtitle">MINHA CONTA</span>
+
           <button className="main-header__icons"
                   onClick={openSearch}>
             <FontAwesomeIcon
