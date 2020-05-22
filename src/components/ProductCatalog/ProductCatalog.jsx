@@ -3,8 +3,6 @@ import Badge from "../Badge";
 import ProductInfo from './../ProductInfo'
 import "./style.scss";
 import Sizes from "../Sizes";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 const ProductCatalog = ({product, loading, onClickImage, onAddCart}) => {
 
@@ -34,10 +32,6 @@ const ProductCatalog = ({product, loading, onClickImage, onAddCart}) => {
     setMessage('')
   }
 
-  const toggleFavoriteItem = () => {
-
-  };
-
   return (
     isLoading
       ? <div className='product-catalog__loading-wrapper'></div>
@@ -47,12 +41,6 @@ const ProductCatalog = ({product, loading, onClickImage, onAddCart}) => {
           <img
             onClick={() => onClickImage(product)}
             src={image} loading="lazy" alt="produto"/>
-          <div>
-            <FontAwesomeIcon
-              icon={faHeart}
-              color="red"
-              size="lg"/>
-          </div>
         </div>
 
         <ProductInfo
