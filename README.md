@@ -5,11 +5,11 @@
 
 ---------------------------
 <p align="center">
- <a href="#objetivos">OBJETIVOS</a> |
- <a href="#regras">REGRAS</a> |
- <a href="#DESAFIOS">DESAFIOS</a> |
- <a href="FERRAMENTAS">FERRAMENTAS</a> |
- <a href="LICENSE">LICENÇA</a>
+ <a href="#-objetivos">OBJETIVOS</a> |
+ <a href="#-regras">REGRAS</a> |
+ <a href="#-desafios-propostos">DESAFIOS</a> |
+ <a href="#-ferramentas-utilizadas">FERRAMENTAS</a> |
+ <a href="#-license">LICENÇA</a>
 
  --------------------------
 
