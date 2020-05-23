@@ -14,7 +14,6 @@ const CatalogProducts = ({ items }) => {
   })
 
   const handleClick = (product) => {
-    console.log({ product })
     dispatch(setModalProduct(product))
   }
 
@@ -23,9 +22,7 @@ const CatalogProducts = ({ items }) => {
       <ProductCatalog
         key={product.images}
         onClickImage={(product) => handleClick(product)}
-        // onClickImage={(product) => setGoToProd(product)}
         product={product}
-        // onAddCart={(product) => addItemToCart(product)}
       />
     </div>
   )))

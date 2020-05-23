@@ -50,11 +50,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b1095a91-7fd3-4450-bc87-5e3555122145" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ProductContainer/ProductContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ProductContainer/ProductContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Catalog/components/CatalogProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Catalog/components/CatalogProducts.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,19 +94,19 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\modules\products" />
-      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\containers" />
-      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\reducers" />
-      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\actions" />
-      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\components\ShoppingCart" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\scss\helpers" />
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\containers\Catalog\components" />
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\containers" />
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\scss\theme" />
       <recent name="C:\Users\Kelvin\Projects\React\fashionista" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\modules\products" />
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\containers" />
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\reducers" />
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\actions" />
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\components\ShoppingCart" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
