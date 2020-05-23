@@ -13,6 +13,10 @@
     cursor: pointer;
   }
 
+  .product-full__chose-size{
+    display: none;
+  }
+
   @media (min-width: 360px){
     .minicart__modal {
       max-width: 350px;
