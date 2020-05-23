@@ -18,31 +18,28 @@ const Header = ({openShoppingCart, openSearch }) => {
 
   return (
     <header className="main-header">
-      <Container>
+      <Container className="main-header__icons-container">
         <Link to="/" className="main-header__link">
-          <h1 className="main-header__title">BARRY&BERRY</h1>
+          <h1 className="main-header__title is--320">B & B</h1>
+          <h1 className="main-header__title is--375">BARRY&BERRY</h1>
         </Link>
-        <div className="main-header__icons-container">
-          <span className="main-header__subtitle">CONTATOS</span>
-          <span className="main-header__subtitle">MINHA CONTA</span>
 
-          <button className="main-header__icons"
-                  onClick={openSearch}>
-            <FontAwesomeIcon
-              icon={faSearch}
-              color="#000"
-              size="lg"/>
-          </button>
-          <button
-            className="main-header__icons icon__bag"
-            onClick={openShoppingCart}>
-            <FontAwesomeIcon
-              icon={faShoppingBag}
-              color="#000"
-              size="lg"/>
-            { outputBadge }
-          </button>
-        </div>
+        <button className="main-header__icons is--search"
+                onClick={openSearch}>
+          <FontAwesomeIcon
+            icon={faSearch}
+            color="#000"
+            size="lg"/>
+        </button>
+        <button
+          className="main-header__icons icon__bag"
+          onClick={openShoppingCart}>
+          <FontAwesomeIcon
+            icon={faShoppingBag}
+            color="#000"
+            size="lg"/>
+          { outputBadge }
+        </button>
       </Container>
     </header>
   );

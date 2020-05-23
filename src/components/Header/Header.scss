@@ -13,15 +13,9 @@
   }
 
   & .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px;
     flex-flow: row;
-
-    @media screen and (max-width: 600px) {
-      flex-flow: column;
-    }
+    justify-content: space-between;
   }
 
   &__title {
@@ -32,8 +26,21 @@
     letter-spacing: 1px;
     font-size: 40px;
 
+    &.is--375 {
+      display: none;
+    }
+    @media screen and (min-width: 374px) {
+      &.is--375{
+        display: block;
+      }
+
+      &.is--320{
+        display: none;
+      }
+    }
+
     @media screen and (max-width: 568px) {
-      font-size: 30px;
+      font-size: 32px;
     }
   }
 
@@ -47,10 +54,10 @@
 
 
   &__icons {
-    font-size: 18px;
+    font-size: 26px;
     border: none;
     padding: 0;
-    margin: 0 10px;
+    margin: 0 18px;
     background-color: transparent;
     outline: none;
     cursor: pointer;
@@ -62,6 +69,10 @@
 
     &:last-of-type {
       margin: 0;
+    }
+
+    &.is--search{
+      margin-left: auto;
     }
 
   }

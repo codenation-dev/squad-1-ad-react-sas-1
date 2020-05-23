@@ -52,14 +52,15 @@ const ProductCatalog = ({product, loading, onClickImage, onAddCart}) => {
 
         <Sizes
           className="product-catalog__sizes-container"
+          maxitems={2}
           sizes={availableSizes}
           onSelected={size => handleSelected(size)}/>
 
-        <button
-          onClick={() => handleClick()}
-          className="fs-button catalog__product-button">Adicionar ao carrinho</button>
+        {/*<button*/}
+        {/*  onClick={() => handleClick()}*/}
+        {/*  className="fs-button catalog__product-button">Adicionar ao carrinho</button>*/}
 
-        <div className="product-catalog__validation-message">{message}</div>
+        {/*<div className="product-catalog__validation-message">{message}</div>*/}
       </div>
   )
 }
