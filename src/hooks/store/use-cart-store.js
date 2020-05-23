@@ -6,6 +6,8 @@ export const goToProduct = ({
   dispatch,
   setPageProduct,
   history,
+  pushMode = true,
+  scrollTop = true,
 }) => {
 
   const setGoToProduct = (product) => {
@@ -17,12 +19,17 @@ export const goToProduct = ({
 
     dispatch(setPageProduct(product))
 
-    window.scroll({
-      top: 0,
-      left: 0,
-    });
-
-    history.push(`product/${slugify(name)}?color=${color_slug}`)
+    if(scrollTop){
+      window.scroll({
+        top: 0,
+        left: 0,
+      });
+    }
+    if(pushMode){
+      history.push(`product/${slugify(name)}?color=${color_slug}`)
+    } else {
+      history.replace(`product/${slugify(name)}?color=${color_slug}`)
+    }
   }
 
   return[null, setGoToProduct]

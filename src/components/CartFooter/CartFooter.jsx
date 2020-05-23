@@ -18,11 +18,9 @@ const CartFooter = ({ value, className }) => {
           <span className="cart-footer__with-currency">
               Comprar
           </span>
-          <a href="/#">
             <span className="cart-footer__empty">
                 Continuar comprando
             </span>
-          </a>
         </div>
       </Link>
     </div>
