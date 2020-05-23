@@ -22,7 +22,11 @@ const ShoppingCart = ({closeShoppingCart, active}) => {
     history: useHistory()
    })
 
-  const { Cart: { items }} = useSelector(state => state)
+  const {
+    Cart: { items },
+    Products: { items: productItems }
+  } = useSelector(state => state)
+
 
   const products = items.map(product => sanitazeProduct(product))
 
@@ -57,8 +61,10 @@ const ShoppingCart = ({closeShoppingCart, active}) => {
   }
 
   const handoGoToProd = (product) =>{
-    // console.log(product)
-    setGoToProd(product)
+    const findedProduct = productItems.find(item => product.image === item.image)
+
+    setGoToProd(findedProduct)
+    closeShoppingCart()
   }
 
 
@@ -70,7 +76,7 @@ const ShoppingCart = ({closeShoppingCart, active}) => {
             <li key={idx} className="shopping-cart__content-item">
               <CartItem
                 product={product}
-                onClickImage={handoGoToProd}
+                onClickImage={(product) => handoGoToProd(product)}
                 totalItems={totalItems}
                 onAddOne={(product) => onAddOne(product)}
                 onRemove={(product) => onRemove(product)}

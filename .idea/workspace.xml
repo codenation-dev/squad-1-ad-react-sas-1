@@ -50,17 +50,19 @@
   <component name="ChangeListManager">
     <list default="true" id="b1095a91-7fd3-4450-bc87-5e3555122145" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Badge/Badge.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Badge/Badge.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Badge/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Badge/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cart/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Container/Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Container/Container.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProductCatalog/ProductCatalog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCatalog/ProductCatalog.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sizes/Sizes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sizes/Sizes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sizes/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sizes/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Catalog/components/CatalogProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Catalog/components/CatalogProducts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Catalog/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Catalog/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/app/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/app/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Search/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Search/Search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/ShoppingCart/ShoppingCart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ShoppingCart/ShoppingCart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/store/use-cart-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/store/use-cart-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/theme/components/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/components/button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,19 +106,19 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\scss\helpers" />
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\containers\Catalog\components" />
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\containers" />
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\scss\theme" />
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\reducers" />
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\actions" />
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\components\ShoppingCart" />
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\components\Search" />
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\components\ProductInfo" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\containers\Catalog\components" />
-      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\containers" />
-      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\scss\theme" />
-      <recent name="C:\Users\Kelvin\Projects\React\fashionista" />
-      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -240,5 +242,17 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="297" y="230" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1589745052107" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/containers/Catalog/components/CatalogProducts.jsx</url>
+          <line>15</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

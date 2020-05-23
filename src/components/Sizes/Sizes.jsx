@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 import './style.scss'
 
-const Sizes = ({ className, sizes, onSelected, maxitems }) => {
+const Sizes = ({ className, sizes, onSelected, maxitems, active }) => {
   const [selected,setSelected] = useState(null)
 
   const handleClick = (el) => {
@@ -25,7 +25,7 @@ const Sizes = ({ className, sizes, onSelected, maxitems }) => {
           key={el.size}
           onClick={() => handleClick(el)}
           className={`button_size ${
-            selected && el.size === selected['size'] ? 'is--selected': ''
+            active && selected && el.size === selected['size'] ? 'is--selected': ''
           }`.trim()}>{el.size}</button>)
       )}
 
@@ -37,6 +37,7 @@ const Sizes = ({ className, sizes, onSelected, maxitems }) => {
 Sizes.defaultProps = {
   sizes: [],
   maxitems: null,
+  active: true,
 }
 
 export default Sizes;

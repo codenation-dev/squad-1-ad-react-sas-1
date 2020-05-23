@@ -53,6 +53,7 @@ const ProductCatalog = ({product, loading, onClickImage, onAddCart}) => {
         <Sizes
           className="product-catalog__sizes-container"
           maxitems={2}
+          active={false}
           sizes={availableSizes}
           onSelected={size => handleSelected(size)}/>
 
