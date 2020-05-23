@@ -43,7 +43,7 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/style-adjusts" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
@@ -51,8 +51,9 @@
     <list default="true" id="b1095a91-7fd3-4450-bc87-5e3555122145" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/ProductContainer/ProductContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ProductContainer/ProductContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Product/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +88,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/reducers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/modules/products" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -97,19 +98,19 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\modules\products" />
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\containers" />
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\reducers" />
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\actions" />
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\components\ShoppingCart" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\scss\helpers" />
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\containers\Catalog\components" />
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\containers" />
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\scss\theme" />
       <recent name="C:\Users\Kelvin\Projects\React\fashionista" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\reducers" />
-      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\actions" />
-      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\components\ShoppingCart" />
-      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\components\Search" />
-      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\components\ProductInfo" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -175,7 +176,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/style-adjusts" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -201,22 +202,22 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="427" y="261" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1589230361952" />
-    <state width="1256" height="262" key="GridCell.Tab.0.bottom" timestamp="1590185396475">
+    <state width="1247" height="259" key="GridCell.Tab.0.bottom" timestamp="1590228077096">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1256" height="262" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1590185396475" />
-    <state width="1256" height="262" key="GridCell.Tab.0.center" timestamp="1590185396474">
+    <state width="1247" height="259" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1590228077096" />
+    <state width="1247" height="259" key="GridCell.Tab.0.center" timestamp="1590228077096">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1256" height="262" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1590185396474" />
-    <state width="1256" height="262" key="GridCell.Tab.0.left" timestamp="1590185396474">
+    <state width="1247" height="259" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1590228077096" />
+    <state width="1247" height="259" key="GridCell.Tab.0.left" timestamp="1590228077095">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1256" height="262" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1590185396474" />
-    <state width="1256" height="262" key="GridCell.Tab.0.right" timestamp="1590185396474">
+    <state width="1247" height="259" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1590228077095" />
+    <state width="1247" height="259" key="GridCell.Tab.0.right" timestamp="1590228077096">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1256" height="262" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1590185396474" />
+    <state width="1247" height="259" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1590228077096" />
     <state x="503" y="225" width="998" height="708" key="SettingsEditor" timestamp="1589727463744">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -233,17 +234,5 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="297" y="230" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1589745052107" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/containers/Catalog/components/CatalogProducts.jsx</url>
-          <line>15</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

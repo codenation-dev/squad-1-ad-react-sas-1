@@ -15,18 +15,6 @@ const ProductCatalog = ({product, loading, onClickImage, onAddCart}) => {
 
   const availableSizes = product.sizes.filter(({available}) => available)
 
-  const handleClick = () => {
-    if(selected){
-      onAddCart({
-        ...product,
-        selected,
-      })
-      setSelected(null)
-    } else {
-      setMessage('Por favor selecione um tamanho')
-    }
-  }
-
   const handleSelected = (size) => {
     setSelected(size)
     setMessage('')
@@ -57,11 +45,6 @@ const ProductCatalog = ({product, loading, onClickImage, onAddCart}) => {
           sizes={availableSizes}
           onSelected={size => handleSelected(size)}/>
 
-        {/*<button*/}
-        {/*  onClick={() => handleClick()}*/}
-        {/*  className="fs-button catalog__product-button">Adicionar ao carrinho</button>*/}
-
-        {/*<div className="product-catalog__validation-message">{message}</div>*/}
       </div>
   )
 }

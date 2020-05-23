@@ -3,11 +3,9 @@ import {useLocation, useHistory} from 'react-router-dom'
 import {useSelector} from "react-redux";
 import {findProductByNameAndSlug} from "../../modules/redux/cart/helpers";
 import Loader from "../../components/Loader";
-import debouce from 'lodash.debounce'
 
 import './style.scss'
 import ProductFullContent from "../../components/ProductFullContent";
-import {delay} from "../../modules/time";
 
 const ProductContainer = () => {
   const location = useLocation()
@@ -48,7 +46,7 @@ const ProductContainer = () => {
         if(!selectedProduct && !product){
           history.push('/404')
         }
-      }, 2000)
+      }, 4000)
     }
   },[initialized, selectedProduct, items])
 
