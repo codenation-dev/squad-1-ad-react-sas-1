@@ -14,12 +14,28 @@
   &__itens {
     display: flex !important;
     flex-flow: row wrap !important;
-
+    justify-content: space-between;
   }
 
   &__product-container {
-    width: 100%;
-    margin: 5px auto 20px;
+    width: 48%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: flex;
+
+    .product-information__name {
+      min-height: 48px;
+    }
+
+    .product-information__prices{
+      display: flex;
+      flex-flow: column nowrap;
+      min-height: 32px;
+    }
+
+    &:nth-child(odd){
+      margin-right: auto !important;
+    }
 
     &:last-child{
       margin-bottom: 0;
