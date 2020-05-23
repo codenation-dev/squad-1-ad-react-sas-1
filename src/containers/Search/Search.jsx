@@ -1,15 +1,24 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import CartItem from '../../components/CartItem';
 import './Search.scss'
 import Cart from "../../components/Cart";
 import Container from "../../components/Container";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import sanitazeProduct from "../../modules/products/sanitazeProductData";
 import {matchProduct} from "../../modules/products/match";
+import {goToProduct} from "../../hooks/store/use-cart-store";
+import {setPageProduct} from "../../actions/products";
+import {useHistory} from "react-router-dom";
 
 const Search = ({closeSearch, active}) => {
   const [search, setSearch] = useState('')
   const { Products: { items } } = useSelector(state => state)
+  const [,setGoToProd] = goToProduct({
+    dispatch: useDispatch(),
+    setPageProduct: setPageProduct,
+    history: useHistory()
+  })
+
   const isMatch = matchProduct(search)
 
   const sanitazedProducts = items.map(product => {
@@ -20,6 +29,18 @@ const Search = ({closeSearch, active}) => {
   }).filter(product => {
     return search && isMatch(product)
   })
+
+  const handleCloseSearch = () => {
+    setSearch('')
+    closeSearch()
+  }
+
+  const handoGoToProd = (product) =>{
+    const findedProduct = items.find(item => product.image === item.image)
+
+    setGoToProd(findedProduct)
+    handleCloseSearch()
+  }
 
   const cardItemVisibilityConfig = {
     removeButton: false,
@@ -39,6 +60,7 @@ const Search = ({closeSearch, active}) => {
       { sanitazedProducts.map((product,idx) => (
         <li key={idx} className="search__content-item">
           <CartItem
+            onClickImage={(product) => handoGoToProd(product,idx)}
             visibilityConfig={cardItemVisibilityConfig}
             product={product}
           />
@@ -55,7 +77,7 @@ const Search = ({closeSearch, active}) => {
 
   return (
     <Cart
-      onClose={closeSearch}
+      onClose={handleCloseSearch}
       title={`Digite algo`}
       active={active}
     >

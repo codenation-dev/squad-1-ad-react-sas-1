@@ -8,7 +8,7 @@ import ProductContainer from "../../containers/ProductContainer";
 function Product() {
   return (
     <Container>
-      <ProductContainer></ProductContainer>
+      <ProductContainer />
     </Container>
   )
 }
