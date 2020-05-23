@@ -36,4 +36,15 @@
   &:focus{
     outline: transparent;
   }
+
+}
+
+.product-full{
+  &__remaining-sizes{
+    align-items: center;
+    color: #999;
+    font-size: 18px;
+    display: flex;
+    width: 0;
+  }
 }

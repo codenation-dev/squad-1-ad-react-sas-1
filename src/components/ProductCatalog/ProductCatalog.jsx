@@ -40,7 +40,7 @@ const ProductCatalog = ({product, loading, onClickImage, onAddCart}) => {
           { discount_percentage && <Badge text={discount_percentage}/> }
           <img
             onClick={() => onClickImage(product)}
-            src={image} loading="lazy" alt="produto"/>
+            src={image} loading="eager" alt="produto"/>
         </div>
 
         <ProductInfo
@@ -52,14 +52,16 @@ const ProductCatalog = ({product, loading, onClickImage, onAddCart}) => {
 
         <Sizes
           className="product-catalog__sizes-container"
+          maxitems={2}
+          active={false}
           sizes={availableSizes}
           onSelected={size => handleSelected(size)}/>
 
-        <button
-          onClick={() => handleClick()}
-          className="fs-button catalog__product-button">Adicionar ao carrinho</button>
+        {/*<button*/}
+        {/*  onClick={() => handleClick()}*/}
+        {/*  className="fs-button catalog__product-button">Adicionar ao carrinho</button>*/}
 
-        <div className="product-catalog__validation-message">{message}</div>
+        {/*<div className="product-catalog__validation-message">{message}</div>*/}
       </div>
   )
 }

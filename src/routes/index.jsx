@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {
   BrowserRouter as Router,
+  Redirect,
   Switch,
   Route,
 } from "react-router-dom";
@@ -14,6 +15,7 @@ import {openCart} from "../actions/cart";
 import {openSearch} from "../actions/search";
 import {openFavorites} from "../actions/favorite";
 import SuccessPurchases from "../pages/SuccessPurchases";
+import Page404 from "../pages/404";
 
 export default function App() {
   const hasOverlay = useSelector(state => {
@@ -49,6 +51,9 @@ export default function App() {
           <Route path="/success-purchases">
             <SuccessPurchases/>
           </Route>
+
+          <Route path="/404" exact={true} component={Page404} />
+          <Redirect from='*' to='/404' />
         </Switch>
       </AppContainer>
     </Router>

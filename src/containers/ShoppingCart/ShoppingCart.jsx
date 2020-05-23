@@ -8,12 +8,25 @@ import groupBY from 'lodash.groupby'
 import sanitazeProduct from "../../modules/products/sanitazeProductData";
 import {formatCartData} from "../../modules/products/formatCartData";
 import {removeBySku, addBySku, removeAllBySku } from "../../actions/cart";
+import {goToProduct} from '../../hooks/store/use-cart-store'
+import {setPageProduct} from "../../actions/products";
+
+import { useHistory } from "react-router-dom";
 
 const ShoppingCart = ({closeShoppingCart, active}) => {
 
   const dispatch = useDispatch()
+  const [,setGoToProd] = goToProduct({
+    dispatch,
+    setPageProduct: setPageProduct,
+    history: useHistory()
+   })
 
-  const { Cart: { items }} = useSelector(state => state)
+  const {
+    Cart: { items },
+    Products: { items: productItems }
+  } = useSelector(state => state)
+
 
   const products = items.map(product => sanitazeProduct(product))
 
@@ -47,6 +60,14 @@ const ShoppingCart = ({closeShoppingCart, active}) => {
     dispatch(removeBySku(sku))
   }
 
+  const handoGoToProd = (product) =>{
+    const findedProduct = productItems.find(item => product.image === item.image)
+
+    setGoToProd(findedProduct)
+    closeShoppingCart()
+  }
+
+
   if(items.length) {
     outputCartContent = (
       <div className="shopping-cart__content">
@@ -55,6 +76,7 @@ const ShoppingCart = ({closeShoppingCart, active}) => {
             <li key={idx} className="shopping-cart__content-item">
               <CartItem
                 product={product}
+                onClickImage={(product) => handoGoToProd(product)}
                 totalItems={totalItems}
                 onAddOne={(product) => onAddOne(product)}
                 onRemove={(product) => onRemove(product)}
