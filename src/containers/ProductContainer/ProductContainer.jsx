@@ -43,10 +43,11 @@ const ProductContainer = () => {
       }
 
       setTimeout(() => {
+        console.log({ selectedProduct, product})
         if(!selectedProduct && !product){
           history.push('/404')
         }
-      }, 2000)
+      }, 4000)
     }
   },[initialized, selectedProduct, items])
 
