@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useRef} from "react";
 import PropType from 'prop-types'
 import './style.scss'
 
@@ -8,6 +8,9 @@ const Cart = ({title, onClose, active, children, className, ...props}) => {
   return (
     <aside
       className={`minicart__overlay ${activeCart} ${className}`.trim()}>
+      <div className="minicart__overlayclick"
+        onClick={onClose}
+      ></div>
       <div className="minicart__modal">
         <div className="minicart__header">
           <button
