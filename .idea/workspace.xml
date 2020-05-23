@@ -43,17 +43,26 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/style-adjusts" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1095a91-7fd3-4450-bc87-5e3555122145" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/containers/ProductModal/ProductModal.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/ProductModal/ProductModal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/ProductModal/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductFullContent/ProductFullContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductFullContent/ProductFullContent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/store/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/store/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Catalog/components/CatalogProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Catalog/components/CatalogProducts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Drawers/Drawers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Drawers/Drawers.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/ProductContainer/ProductContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ProductContainer/ProductContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Product/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/store/use-cart-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/store/use-cart-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/products/sanitazeProductData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/products/sanitazeProductData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +96,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/reducers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/modules/products" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -105,11 +114,11 @@
       <recent name="C:\Users\Kelvin\Projects\React\fashionista" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\modules\products" />
+      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\containers" />
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\reducers" />
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\actions" />
       <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\components\ShoppingCart" />
-      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\components\Search" />
-      <recent name="C:\Users\Kelvin\Projects\React\fashionista\src\components\ProductInfo" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -175,7 +184,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/style-adjusts" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -233,17 +242,5 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="297" y="230" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1589745052107" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/containers/Catalog/components/CatalogProducts.jsx</url>
-          <line>15</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

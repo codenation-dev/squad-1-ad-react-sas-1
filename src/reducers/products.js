@@ -3,7 +3,8 @@ import { productionActionTypes } from '../constants/store';
 const INITIAL_STATE = {
   items: [
   ],
-  product: null
+  product: null,
+  modalProduct: null,
 };
 
 export const productsReducer = (state = INITIAL_STATE, action) => {
@@ -20,6 +21,12 @@ export const productsReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         product: payload
+      }
+
+    case productionActionTypes.PRODUCTS_SET_MODAL_PRODUCT:
+      return {
+        ...state,
+        modalProduct: payload
       }
 
     default:

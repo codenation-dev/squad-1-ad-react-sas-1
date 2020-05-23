@@ -21,10 +21,11 @@ export default function App() {
   const hasOverlay = useSelector(state => {
      const {
        Search: { open: openSearch },
-       Cart: { open: openCart }
+       Cart: { open: openCart },
+       Products: { modalProduct }
      } = state
 
-    return openCart || openSearch
+    return openCart || openSearch || modalProduct
   })
 
   const dispatch = useDispatch()

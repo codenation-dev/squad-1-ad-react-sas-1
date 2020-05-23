@@ -3,11 +3,9 @@ import {useLocation, useHistory} from 'react-router-dom'
 import {useSelector} from "react-redux";
 import {findProductByNameAndSlug} from "../../modules/redux/cart/helpers";
 import Loader from "../../components/Loader";
-import debouce from 'lodash.debounce'
 
 import './style.scss'
 import ProductFullContent from "../../components/ProductFullContent";
-import {delay} from "../../modules/time";
 
 const ProductContainer = () => {
   const location = useLocation()
